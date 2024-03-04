@@ -7,5 +7,6 @@
     <x-pages.trusted-by-companies/>
     <x-pages.our-process/>
     <x-pages.call-to-action/>
-    <x-pages.testimonies/>
+    <x-pages.testimonies bgColor="purple"/>
+    <x-pages.footer/>
 </x-guest-layout>
