@@ -1,4 +1,5 @@
 <x-guest-layout>
+    <x-pages.nav/>
     <x-pages.hero-section 
     title="Content marketing isn’t simple anymore." 
     description="Our strategists, researchers, writers, and editors help you leverage high-quality content to grow your business."
