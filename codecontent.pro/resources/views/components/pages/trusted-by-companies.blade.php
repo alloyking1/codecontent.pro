@@ -1,4 +1,11 @@
-<div class="bg-[#F0ECFF] p-16 border-y-4 border-black">
+<div class="px-8">
+    <div class="pb-4">
+
+        <h2 class="text-5xl text-bold">Our Services</h2>
+    </div>
+    <hr class="border-black border-2">
+</div>
+<div class="bg-[#F0ECFF] p-16 border-b-4 border-b-black">
     <div class="text-center">
         <h1 class="text-2xl font-bold my-4">
             Trusted by creators worldwide

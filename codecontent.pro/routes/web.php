@@ -29,8 +29,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::prefix('/pages')->group(function () {
+Route::prefix('/')->group(function () {
     Route::get('/', [PagesController::class, 'index'])->name('pages.index');
+    Route::get('/services', [PagesController::class, 'services'])->name('pages.services');
+    Route::get('/about', [PagesController::class, 'about'])->name('pages.about');
 });
 
 require __DIR__ . '/auth.php';

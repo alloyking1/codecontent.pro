@@ -26,19 +26,21 @@
           </button>
         </div>
 
-        {{-- <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
           <div class="flex flex-shrink-0 items-center">
-            {{ env('APP_NAME') }}
+            <a href="{{ route('pages.index') }}">
+              {{ env('APP_NAME') }}
+            </a>
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
-              <a href="#" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-              <a href="#" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Services</a>
-              <a href="#" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">About</a>
+              <a href="{{ route('pages.index') }}" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+              <a href="{{ route('pages.services') }}" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Services</a>
+              <a href="{{ route('pages.about') }}" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">About</a>
               <a href="#" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Blog</a>
             </div>
           </div>
-        </div> --}}
+        </div>
       </div>
 
     </div>
@@ -46,9 +48,9 @@
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="sm:hidden" x-show="open">
       <div class="space-y-1 px-2 pb-3 pt-2">
-        <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+        <a href="{{ route('pages.index') }}" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+        <a href="{{ route('pages.services') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Services</a>
+        <a href="{{ route('pages.about') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
         <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
       </div>
     </div>
