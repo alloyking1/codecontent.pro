@@ -7,6 +7,7 @@ export default {
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+        'node_modules/preline/dist/*.js',
     ],
 
     theme: {
@@ -15,7 +16,13 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
         },
+
+        colors: {
+            'blue-color' : '#A5A6FF',
+            'dark-blue-color' : '#130F49',
+        }
     },
 
-    plugins: [forms],
+    plugins: [forms,require('preline/plugin'),
+    ],
 };
