@@ -31,8 +31,8 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::prefix('/')->group(function () {
-    // Route::get('/', [PagesController::class, 'index'])->name('pages.index');
-    Route::get('/', [PortfolioController::class, 'index'])->name('pages.index');
+    Route::get('/', [PagesController::class, 'index'])->name('pages.index');
+    // Route::get('/', [PortfolioController::class, 'index'])->name('pages.index');
     Route::get('/services', [PagesController::class, 'services'])->name('pages.services');
     Route::get('/about', [PagesController::class, 'about'])->name('pages.about');
 });

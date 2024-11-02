@@ -1,6 +1,6 @@
 <nav class="bg-white border-b-2 border-black fixed w-full" x-data="{ open: false }">
     
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
@@ -28,14 +28,15 @@
 
         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
           <div class="flex flex-shrink-0 items-center">
-            <a href="{{ route('pages.index') }}">
+            <a href="{{ route('pages.index') }}" class="font-bold text-2xl">
               {{ env('APP_NAME') }}
             </a>
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
-              <a href="{{ route('pages.index') }}" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+              {{-- <a href="{{ route('pages.index') }}" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a> --}}
               <a href="{{ route('pages.services') }}" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Services</a>
+              <a href="{{ route('pages.services') }}" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Portfolio</a>
               <a href="{{ route('pages.about') }}" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">About</a>
               <a href="#" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Blog</a>
             </div>

@@ -15,12 +15,12 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
-        },
 
-        colors: {
-            'blue-color' : '#A5A6FF',
-            'dark-blue-color' : '#130F49',
-        }
+            colors: {
+                'blue-color' : '#A5A6FF',
+                'dark-blue-color' : '#130F49',
+            }
+        },
     },
 
     plugins: [forms,require('preline/plugin'),

@@ -1,8 +1,10 @@
 <x-guest-layout>
     <x-pages.nav/>
     <x-pages.hero-section 
-    title="Content marketing isn’t simple anymore." 
-    description="Our strategists, researchers, writers, and editors help you leverage high-quality content to grow your business."
+    title="Hi, my name is Moses and this is Codecontent" 
+    description="We are a small team of software developers who do not only enjoy coding but also writing technical content and documentation. 
+         I can help you bring your ideas to life in the form of web development or technical writing. Do you have a project in mind? 
+    "
     bg="yellow"
     />
 
