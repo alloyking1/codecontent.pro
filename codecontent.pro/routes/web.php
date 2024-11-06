@@ -35,6 +35,7 @@ Route::prefix('/')->group(function () {
     // Route::get('/', [PortfolioController::class, 'index'])->name('pages.index');
     Route::get('/services', [PagesController::class, 'services'])->name('pages.services');
     Route::get('/about', [PagesController::class, 'about'])->name('pages.about');
+    Route::get('/price', [PagesController::class, 'price'])->name('pages.price');
 });
 
 

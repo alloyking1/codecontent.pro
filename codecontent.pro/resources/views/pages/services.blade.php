@@ -6,10 +6,7 @@
     bg="purple"
     />
 
-    
-    {{-- <x-pages.trusted-by-companies/> --}}
     <x-pages.services/> 
     <x-pages.call-to-action/>
-    {{-- <x-pages.testimonies bgColor="purple"/> --}}
     <x-pages.footer/>
 </x-guest-layout>

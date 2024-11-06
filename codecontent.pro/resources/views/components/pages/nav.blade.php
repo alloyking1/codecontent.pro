@@ -34,11 +34,10 @@
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
-              {{-- <a href="{{ route('pages.index') }}" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a> --}}
-              <a href="{{ route('pages.services') }}" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Services</a>
-              <a href="{{ route('pages.services') }}" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Portfolio</a>
-              <a href="{{ route('pages.about') }}" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">About</a>
-              <a href="#" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Blog</a>
+              <a href="{{ route('pages.index') }}/#service" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium">Services</a>
+              <a href="{{ route('pages.index') }}/#portfolio" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium">Portfolio</a>
+              <a href="{{ route('pages.index') }}/#testimony" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Testimonies</a>
+              <a href="{{ route('pages.price') }}" class="text-grey-900 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Pricing</a>
             </div>
           </div>
         </div>
@@ -49,10 +48,10 @@
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="sm:hidden" x-show="open">
       <div class="space-y-1 px-2 pb-3 pt-2">
-        <a href="{{ route('pages.index') }}" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
-        <a href="{{ route('pages.services') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Services</a>
-        <a href="{{ route('pages.about') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+        <a x-on:click="open = ! open" href="{{ route('pages.index') }}/#service" class="text-gray-300 block rounded-md px-3 py-2 text-base font-medium">Services</a>
+        <a x-on:click="open = ! open" href="{{ route('pages.index') }}/#portfolio" class="text-gray-300 block rounded-md px-3 py-2 text-base font-medium">Portfolio</a>
+        <a x-on:click="open = ! open" href="{{ route('pages.index') }}/#testimony" class="text-gray-300 block rounded-md px-3 py-2 text-base font-medium">Testimonies</a>
+        <a href="{{ route('pages.price') }}" class="text-gray-300 block rounded-md px-3 py-2 text-base font-medium">Pricing</a>
       </div>
     </div>
   </nav>

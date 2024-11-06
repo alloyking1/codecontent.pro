@@ -40,13 +40,16 @@
             <div class="md:justify-end md:flex mt-4">
                 <ul class="py-6">
                     <li class="text-3xl py-4">
-                        <a href="#">About</a>
+                        <a href="{{ route('pages.index') }}/#service">Service</a>
                     </li>
                     <li class="text-3xl py-4">
-                        <a href="#">join Us</a>
+                        <a href="{{ route('pages.index') }}/#portfolio">Portfolio</a>
                     </li>
                     <li class="text-3xl py-4">
-                        <a href="#">Contact</a>
+                        <a href="{{ route('pages.index') }}/#testimony">Testimonies</a>
+                    </li>
+                    <li class="text-3xl py-4">
+                        <a href="{{ route('pages.price') }}">Pricing</a>
                     </li>
                 </ul>
             </div>
