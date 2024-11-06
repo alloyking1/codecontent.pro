@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -31,8 +32,10 @@ Route::middleware('auth')->group(function () {
 
 Route::prefix('/')->group(function () {
     Route::get('/', [PagesController::class, 'index'])->name('pages.index');
+    // Route::get('/', [PortfolioController::class, 'index'])->name('pages.index');
     Route::get('/services', [PagesController::class, 'services'])->name('pages.services');
     Route::get('/about', [PagesController::class, 'about'])->name('pages.about');
 });
+
 
 require __DIR__ . '/auth.php';
