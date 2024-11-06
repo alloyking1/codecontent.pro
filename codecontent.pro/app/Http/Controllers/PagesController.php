@@ -20,4 +20,8 @@ class PagesController extends Controller
     {
         return view('pages/about');
     }
+
+    public function price(){
+        return view('pages/price');
+    }
 }
