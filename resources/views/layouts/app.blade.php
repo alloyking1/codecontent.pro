@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+        @php
+            $siteTitle = trim($__env->yieldContent('title', 'CodeContent.pro | Developer Education That Helps Startups Grow'));
+            $siteDescription = trim($__env->yieldContent('meta_description', 'Developer education that helps startups turn complex products into clear, adoptable experiences.'));
+            $canonicalUrl = url()->current();
+            $shareImage = asset('favicon.ico');
+            $orgSchema = [
+                '@context' => 'https://schema.org',
+                '@type' => 'Organization',
+                'name' => 'CodeContent.pro',
+                'url' => url('/'),
+                'description' => 'Developer education agency helping startups and SaaS companies improve developer onboarding, activation, and adoption.',
+                'email' => 'hello@codecontent.pro',
+                'areaServed' => 'Global',
+            ];
+        @endphp
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Developer education that helps startups turn complex products into clear, adoptable experiences.">
+        <meta name="description" content="{{ $siteDescription }}">
+        <meta name="robots" content="index,follow">
+        <meta name="theme-color" content="#FFFFFF">
 
-        <title>@yield('title', 'CodeContent.pro | Developer Education That Helps Startups Grow')</title>
+        <link rel="canonical" href="{{ $canonicalUrl }}">
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="{{ $siteTitle }}">
+        <meta property="og:description" content="{{ $siteDescription }}">
+        <meta property="og:url" content="{{ $canonicalUrl }}">
+        <meta property="og:site_name" content="CodeContent.pro">
+        <meta property="og:image" content="{{ $shareImage }}">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ $siteTitle }}">
+        <meta name="twitter:description" content="{{ $siteDescription }}">
+        <meta name="twitter:image" content="{{ $shareImage }}">
+
+        <title>{{ $siteTitle }}</title>
+
+        <script type="application/ld+json">{!! json_encode($orgSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @stack('head')
     </head>
     <body class="min-h-screen">
+        <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-[#FACC15] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-[#0A0A0A]">Skip to main content</a>
         <div class="relative overflow-hidden">
             <div class="pointer-events-none absolute inset-x-0 top-0 h-[34rem] bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.10),transparent_55%)]"></div>
 
@@ -25,10 +59,13 @@
                             </span>
                         </a>
 
-                        <nav class="hidden items-center gap-8 lg:flex">
+                        <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
                             <a class="nav-link" href="#hero">Home</a>
                             <a class="nav-link" href="#services">Services</a>
                             <a class="nav-link" href="#why-education">Why Education</a>
+                            <a class="nav-link" href="#starter-offer">Starter Offer</a>
+                            <a class="nav-link" href="#process">Process</a>
+                            <a class="nav-link" href="#founder-story">Founder</a>
                             <a class="nav-link" href="#contact">Contact</a>
                             <a class="button-primary" href="#contact">Book a call</a>
                         </nav>
@@ -54,6 +91,9 @@
                                     <a class="nav-link" href="#hero" @click="mobileMenuOpen = false">Home</a>
                                     <a class="nav-link" href="#services" @click="mobileMenuOpen = false">Services</a>
                                     <a class="nav-link" href="#why-education" @click="mobileMenuOpen = false">Why Education</a>
+                                    <a class="nav-link" href="#starter-offer" @click="mobileMenuOpen = false">Starter Offer</a>
+                                    <a class="nav-link" href="#process" @click="mobileMenuOpen = false">Process</a>
+                                    <a class="nav-link" href="#founder-story" @click="mobileMenuOpen = false">Founder</a>
                                     <a class="nav-link" href="#contact" @click="mobileMenuOpen = false">Contact</a>
                                     <a class="button-primary w-full sm:w-fit" href="#contact" @click="mobileMenuOpen = false">Book a call</a>
                                 </div>
@@ -63,15 +103,29 @@
                 </div>
             </header>
 
-            <main>
+            <main id="main-content">
                 @yield('content')
             </main>
 
             <footer class="border-t border-[#E5E5E5] bg-white">
                 <div class="site-shell py-8">
-                    <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                        <p class="text-sm text-[#525252]">CodeContent.pro helps SaaS teams ship developer education that clarifies, activates, and retains users.</p>
-                        <p class="text-sm text-[#525252]">Premium. Minimal. Built for developers.</p>
+                    <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+                        <div class="max-w-2xl">
+                            <p class="text-sm text-[#525252]">CodeContent.pro helps SaaS teams ship developer education that clarifies, activates, and retains users.</p>
+                            <p class="mt-2 text-sm text-[#525252]">Premium. Minimal. Built for developers.</p>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-[#525252]">
+                            <a class="hover:text-[#0A0A0A]" href="#services">Services</a>
+                            <a class="hover:text-[#0A0A0A]" href="#starter-offer">Starter Offer</a>
+                            <a class="hover:text-[#0A0A0A]" href="#process">Process</a>
+                            <a class="hover:text-[#0A0A0A]" href="#contact">Contact</a>
+                            <a class="hover:text-[#0A0A0A]" href="mailto:hello@codecontent.pro">hello@codecontent.pro</a>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 border-t border-[#E5E5E5] pt-4">
+                        <p class="text-xs uppercase tracking-[0.18em] text-[#525252]">&copy; {{ now()->year }} CodeContent.pro</p>
                     </div>
                 </div>
             </footer>

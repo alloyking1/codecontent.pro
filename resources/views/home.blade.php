@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'CodeContent.pro | Developer Education That Helps Startups Grow')
+@section('meta_description', 'CodeContent.pro is a developer education agency helping startups and SaaS teams improve onboarding, activation, and developer adoption through content, documentation, and learning systems.')
 
 @section('content')
     <section id="hero" class="section-pad pt-20 sm:pt-24 lg:pt-28">
@@ -396,24 +397,44 @@
     <section id="contact" class="section-pad">
         <div class="site-shell">
             <div class="card overflow-hidden">
-                <div class="grid gap-0 lg:grid-cols-[1fr_auto] lg:items-center">
+                <div class="grid gap-0 lg:grid-cols-[1fr_auto] lg:items-stretch">
                     <div class="p-8 sm:p-10 lg:p-12">
                         <div class="eyebrow">
                             <span class="h-2 w-2 rounded-full bg-[#FACC15]"></span>
-                            Start here
+                            Contact
                         </div>
-                        <h2 class="mt-4 max-w-xl text-3xl font-semibold tracking-tight text-[#0A0A0A] sm:text-4xl">
+                        <h2 id="contact-heading" class="mt-4 max-w-xl text-3xl font-semibold tracking-tight text-[#0A0A0A] sm:text-4xl">
                             If the product is technical, the education should be precise.
                         </h2>
                         <p class="mt-4 max-w-2xl text-base leading-7 text-[#525252] sm:text-lg">
                             We partner with teams that want stronger adoption, clearer onboarding, and a better developer experience.
                         </p>
+
+                        <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-[#525252]">
+                            <span class="inline-flex items-center gap-2.5">
+                                <span class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8]">
+                                    <svg class="h-3.5 w-3.5 text-[#0A0A0A]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
+                                        <path d="M4 10h12M10 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                Typical response in 24 hours
+                            </span>
+                            <span class="inline-flex items-center gap-2.5">
+                                <span class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8]">
+                                    <svg class="h-3.5 w-3.5 text-[#0A0A0A]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
+                                        <path d="M4 10h12M10 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                Founder-led conversation
+                            </span>
+                        </div>
                     </div>
 
-                    <div class="border-t border-[#E5E5E5] bg-[#F8F8F8] p-8 lg:border-l lg:border-t-0 lg:p-10">
-                        <p class="text-sm font-semibold text-[#0A0A0A]">Contact</p>
-                        <p class="mt-2 text-sm leading-6 text-[#525252]">Email the team to start the conversation.</p>
-                        <a href="mailto:hello@codecontent.pro" class="button-primary mt-6 w-full sm:w-auto">hello@codecontent.pro</a>
+                    <div class="border-t border-[#E5E5E5] bg-[#F8F8F8] p-8 lg:border-l lg:border-t-0 lg:p-10" aria-labelledby="contact-heading">
+                        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Direct contact</p>
+                        <p class="mt-3 text-base font-semibold text-[#0A0A0A]">Share your product and education goals.</p>
+                        <p class="mt-2 text-sm leading-6 text-[#525252]">Email is the fastest way to start. Include your product URL and current onboarding challenge.</p>
+                        <a href="mailto:hello@codecontent.pro" class="button-primary mt-6 w-full sm:w-auto" aria-label="Email CodeContent at hello@codecontent.pro">hello@codecontent.pro</a>
                     </div>
                 </div>
             </div>
