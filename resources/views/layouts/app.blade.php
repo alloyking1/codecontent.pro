@@ -68,6 +68,7 @@
                             <a class="nav-link" href="#why-education">Why Education</a>
                             <a class="nav-link" href="#starter-offer">Starter Offer</a>
                             <a class="nav-link" href="#process">Process</a>
+                            <a class="nav-link" href="#trusted-experience">Trust</a>
                             <a class="nav-link" href="#founder-story">Founder</a>
                             <a class="nav-link" href="#contact">Contact</a>
                             <a class="button-primary" href="#contact">Book a call</a>
@@ -96,6 +97,7 @@
                                     <a class="nav-link" href="#why-education" @click="mobileMenuOpen = false">Why Education</a>
                                     <a class="nav-link" href="#starter-offer" @click="mobileMenuOpen = false">Starter Offer</a>
                                     <a class="nav-link" href="#process" @click="mobileMenuOpen = false">Process</a>
+                                    <a class="nav-link" href="#trusted-experience" @click="mobileMenuOpen = false">Trust</a>
                                     <a class="nav-link" href="#founder-story" @click="mobileMenuOpen = false">Founder</a>
                                     <a class="nav-link" href="#contact" @click="mobileMenuOpen = false">Contact</a>
                                     <a class="button-primary w-full sm:w-fit" href="#contact" @click="mobileMenuOpen = false">Book a call</a>

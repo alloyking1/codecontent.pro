@@ -111,7 +111,8 @@
                 </div>
 
                 <h2 class="mt-4 text-3xl font-semibold tracking-tight text-[#0A0A0A] sm:text-4xl">
-                    We design developer education systems that improve product adoption.
+                    {{-- <span class="bg-[#FACC15] px-2 rounded-full">We design developer education systems that improve product adoption.</span> --}}
+                    <span>We design developer education systems that improve product adoption.</span>
                 </h2>
 
                 <p class="mt-4 text-base leading-7 text-[#525252] sm:text-lg">
@@ -266,6 +267,153 @@
         </div>
     </section>
 
+    {{-- proof of works we've done --}}
+    <section id="trusted-experience" class="section-pad border-t border-[#E5E5E5] bg-[linear-gradient(180deg,#FFFDF3_0%,#F8F8F8_38%,#FFFFFF_100%)]" x-data="trustedExperienceStats()" x-init="init()">
+        <div class="site-shell relative">
+            <div class="pointer-events-none absolute inset-x-0 top-0 h-48 bg-[radial-gradient(circle_at_top_right,rgba(250,204,21,0.18),transparent_38%),radial-gradient(circle_at_left,rgba(0,0,0,0.04),transparent_35%)]"></div>
+
+            <div class="relative max-w-4xl">
+                <div class="eyebrow">
+                    <span class="h-2 w-2 rounded-full bg-[#FACC15]"></span>
+                    Trusted experience
+                </div>
+
+                <h2 class="mt-4 text-3xl font-semibold tracking-tight text-[#0A0A0A] sm:text-4xl lg:text-5xl">
+                    Proof That Developer Education Works
+                </h2>
+
+                <p class="mt-5 max-w-3xl text-base leading-8 text-[#525252] sm:text-lg">
+                    Years of creating technical content, educational resources, tutorials, and developer learning experiences for developer ecosystems and startups.
+                </p>
+            </div>
+
+            <div class="relative mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+                <article class="card border-[#E7E1C3] bg-white/90 p-7 shadow-[0_12px_30px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95]">
+                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Years in Developer Education</p>
+                    <p class="mt-3 text-4xl font-semibold tracking-tight text-[#0A0A0A] transition duration-300" x-text="stats[0].display">8+</p>
+                </article>
+                <article class="card border-[#E7E1C3] bg-white/90 p-7 shadow-[0_12px_30px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95]">
+                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Technical Articles Published</p>
+                    <p class="mt-3 text-4xl font-semibold tracking-tight text-[#0A0A0A] transition duration-300" x-text="stats[1].display">100+</p>
+                </article>
+                <article class="card border-[#E7E1C3] bg-[linear-gradient(180deg,#FFF9DB_0%,#FFFFFF_100%)] p-7 shadow-[0_12px_30px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95]">
+                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Developers Reached</p>
+                    <p class="mt-3 text-4xl font-semibold tracking-tight text-[#0A0A0A] transition duration-300" x-text="stats[2].display">Thousands</p>
+                </article>
+                <article class="card border-[#E7E1C3] bg-white/90 p-7 shadow-[0_12px_30px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95]">
+                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Educational Resources Created</p>
+                    <p class="mt-3 text-4xl font-semibold tracking-tight text-[#0A0A0A] transition duration-300" x-text="stats[3].display">100+</p>
+                </article>
+            </div>
+
+            <div class="mt-14 grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+                <div class="card p-8 sm:p-10">
+                    <h3 class="text-2xl font-semibold tracking-tight text-[#0A0A0A]">Experience Across Developer Ecosystems</h3>
+                    <p class="mt-4 max-w-3xl text-sm leading-7 text-[#525252]">Experience creating developer-focused content, educational materials, tutorials, and learning experiences for modern developer platforms.</p>
+
+                    <div class="mt-8 grid gap-4 sm:grid-cols-[auto_auto] sm:items-center sm:gap-8">
+                        <p class="text-xl font-semibold tracking-tight text-[#0A0A0A]">MongoDB</p>
+                        <p class="border-t border-[#E5E5E5] pt-4 text-xl font-semibold tracking-tight text-[#0A0A0A] sm:border-l sm:border-t-0 sm:pl-8 sm:pt-0">Twilio</p>
+                    </div>
+                </div>
+
+                <div class="card-surface relative overflow-hidden p-8 sm:p-10">
+                    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(250,204,21,0.14),transparent_38%)]"></div>
+                    <div class="relative">
+                        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Selected context</p>
+                        <p class="mt-4 text-lg leading-8 text-[#0A0A0A] sm:text-xl">Developer education works best when it is rooted in real product usage, not generic marketing language.</p>
+                        <p class="mt-4 text-sm leading-7 text-[#525252]">That is why this section pairs proof, ecosystem experience, and featured content in one place.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14">
+                <h3 class="text-2xl font-semibold tracking-tight text-[#0A0A0A]">Selected Work</h3>
+
+                <div class="mt-8 grid gap-6 lg:grid-cols-3">
+                    <article class="group card bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95] hover:shadow-[0_16px_40px_rgba(0,0,0,0.06)]">
+                        <span class="inline-flex rounded-full border border-[#E5E5E5] bg-[#F8F8F8] px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#525252]">Tutorial</span>
+                        <h4 class="mt-4 text-lg font-semibold tracking-tight text-[#0A0A0A]">Building Scalable APIs with Laravel</h4>
+                        <p class="mt-3 text-sm leading-7 text-[#525252]">A practical walkthrough showing teams how to design maintainable APIs with clear developer onboarding paths.</p>
+                        <a href="#contact" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#0A0A0A] transition group-hover:gap-3 group-hover:text-[#525252]">
+                            Read More
+                            <span aria-hidden="true">&rarr;</span>
+                        </a>
+                    </article>
+
+                    <article class="group card bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95] hover:shadow-[0_16px_40px_rgba(0,0,0,0.06)]">
+                        <span class="inline-flex rounded-full border border-[#E5E5E5] bg-[#F8F8F8] px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#525252]">Guide</span>
+                        <h4 class="mt-4 text-lg font-semibold tracking-tight text-[#0A0A0A]">Getting Started with MongoDB Atlas</h4>
+                        <p class="mt-3 text-sm leading-7 text-[#525252]">A developer-first onboarding sequence to help teams move from setup to first successful implementation quickly.</p>
+                        <a href="#contact" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#0A0A0A] transition group-hover:gap-3 group-hover:text-[#525252]">
+                            Read More
+                            <span aria-hidden="true">&rarr;</span>
+                        </a>
+                    </article>
+
+                    <article class="group card bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95] hover:shadow-[0_16px_40px_rgba(0,0,0,0.06)]">
+                        <span class="inline-flex rounded-full border border-[#E5E5E5] bg-[#F8F8F8] px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#525252]">Documentation</span>
+                        <h4 class="mt-4 text-lg font-semibold tracking-tight text-[#0A0A0A]">Modern Authentication for Web Applications</h4>
+                        <p class="mt-3 text-sm leading-7 text-[#525252]">Clear educational content that helps developers implement secure authentication without onboarding friction.</p>
+                        <a href="#contact" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#0A0A0A] transition group-hover:gap-3 group-hover:text-[#525252]">
+                            Read More
+                            <span aria-hidden="true">&rarr;</span>
+                        </a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="mt-14 card-surface border border-[#E7E1C3] p-8 sm:p-10">
+                <p class="text-lg leading-8 text-[#0A0A0A] sm:text-xl">
+                    Developer education isn't just about writing content.
+                </p>
+                <p class="mt-4 text-base leading-8 text-[#525252] sm:text-lg">
+                    It's about helping developers understand products faster, reducing onboarding friction, and creating learning experiences that improve adoption.
+                </p>
+            </div>
+        </div>
+    </section>
+    {{-- proof ends here --}}
+
+
+    <section id="process" class="section-pad border-t border-[#E5E5E5]">
+        <div class="site-shell">
+            <div class="max-w-3xl">
+                <div class="eyebrow">
+                    <span class="h-2 w-2 rounded-full bg-[#FACC15]"></span>
+                    Process
+                </div>
+
+                <h2 class="mt-4 text-3xl font-semibold tracking-tight text-[#0A0A0A] sm:text-4xl">
+                    A simple process built for fast-moving product teams.
+                </h2>
+            </div>
+
+            <div class="mt-12 grid gap-6 lg:grid-cols-4">
+                <article class="card p-7">
+                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Step 01</p>
+                    <p class="mt-3 text-base font-semibold text-[#0A0A0A]">Audit</p>
+                    <p class="mt-3 text-sm leading-6 text-[#525252]">Review your product journey, docs, onboarding, and support signals.</p>
+                </article>
+                <article class="card p-7">
+                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Step 02</p>
+                    <p class="mt-3 text-base font-semibold text-[#0A0A0A]">Prioritize</p>
+                    <p class="mt-3 text-sm leading-6 text-[#525252]">Identify the education work with the highest activation impact first.</p>
+                </article>
+                <article class="card p-7">
+                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Step 03</p>
+                    <p class="mt-3 text-base font-semibold text-[#0A0A0A]">Build</p>
+                    <p class="mt-3 text-sm leading-6 text-[#525252]">Create and ship learning assets designed for real developer behavior.</p>
+                </article>
+                <article class="card p-7">
+                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Step 04</p>
+                    <p class="mt-3 text-base font-semibold text-[#0A0A0A]">Iterate</p>
+                    <p class="mt-3 text-sm leading-6 text-[#525252]">Measure clarity, adoption, and support reduction, then refine continuously.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <section id="starter-offer" class="section-pad border-t border-[#E5E5E5] bg-[#F8F8F8]/60">
         <div class="site-shell">
             <div class="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
@@ -327,61 +475,24 @@
         </div>
     </section>
 
-    <section id="process" class="section-pad border-t border-[#E5E5E5]">
-        <div class="site-shell">
-            <div class="max-w-3xl">
-                <div class="eyebrow">
-                    <span class="h-2 w-2 rounded-full bg-[#FACC15]"></span>
-                    Process
-                </div>
-
-                <h2 class="mt-4 text-3xl font-semibold tracking-tight text-[#0A0A0A] sm:text-4xl">
-                    A simple process built for fast-moving product teams.
-                </h2>
-            </div>
-
-            <div class="mt-12 grid gap-6 lg:grid-cols-4">
-                <article class="card p-7">
-                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Step 01</p>
-                    <p class="mt-3 text-base font-semibold text-[#0A0A0A]">Audit</p>
-                    <p class="mt-3 text-sm leading-6 text-[#525252]">Review your product journey, docs, onboarding, and support signals.</p>
-                </article>
-                <article class="card p-7">
-                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Step 02</p>
-                    <p class="mt-3 text-base font-semibold text-[#0A0A0A]">Prioritize</p>
-                    <p class="mt-3 text-sm leading-6 text-[#525252]">Identify the education work with the highest activation impact first.</p>
-                </article>
-                <article class="card p-7">
-                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Step 03</p>
-                    <p class="mt-3 text-base font-semibold text-[#0A0A0A]">Build</p>
-                    <p class="mt-3 text-sm leading-6 text-[#525252]">Create and ship learning assets designed for real developer behavior.</p>
-                </article>
-                <article class="card p-7">
-                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Step 04</p>
-                    <p class="mt-3 text-base font-semibold text-[#0A0A0A]">Iterate</p>
-                    <p class="mt-3 text-sm leading-6 text-[#525252]">Measure clarity, adoption, and support reduction, then refine continuously.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
     <section id="founder-story" class="section-pad border-t border-[#E5E5E5] bg-[#F8F8F8]/60">
         <div class="site-shell">
-            <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-                <div class="card-surface p-8 sm:p-10">
-                    <div class="overflow-hidden rounded-2xl border border-[#E5E5E5] bg-white">
-                        <img
-                            src="https://media.licdn.com/dms/image/v2/D4D03AQG1CSmVRhcomA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728111048385?e=1781740800&v=beta&t=lFmSuO0jRFrtNaTmO0_SeWjM0ZRtZivcE6ON-xVRMLQ"
-                            alt="Moses portrait"
-                            class="h-80 w-full object-cover object-center sm:h-[28rem]"
-                        >
-                    </div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Founder story</p>
-                    <p class="mt-4 text-2xl font-semibold tracking-tight text-[#0A0A0A]">Built from product and developer education experience.</p>
+            <div class="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+                <div class="card-surface overflow-hidden p-0">
+                    <img
+                        src="https://media.licdn.com/dms/image/v2/D4D03AQG1CSmVRhcomA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728111048385?e=1781740800&v=beta&t=lFmSuO0jRFrtNaTmO0_SeWjM0ZRtZivcE6ON-xVRMLQ"
+                        alt="Portrait of Moses"
+                        class="h-[28rem] w-full object-cover object-center sm:h-[34rem]"
+                    >
                 </div>
 
                 <div class="max-w-3xl">
-                    <p class="text-base leading-8 text-[#525252] sm:text-lg">
+                    <div class="eyebrow">
+                        <span class="h-2 w-2 rounded-full bg-[#FACC15]"></span>
+                        Founder story
+                    </div>
+                    <h2 class="mt-4 text-3xl font-semibold tracking-tight text-[#0A0A0A] sm:text-4xl lg:text-5xl">Built from product and developer education experience.</h2>
+                    <p class="mt-6 text-base leading-8 text-[#525252] sm:text-lg">
                         CodeContent.pro started from a simple observation: many strong products fail to earn adoption because education is treated as an afterthought. Developers are asked to figure out complex systems without a coherent path.
                     </p>
                     <p class="mt-6 text-base leading-8 text-[#525252] sm:text-lg">
