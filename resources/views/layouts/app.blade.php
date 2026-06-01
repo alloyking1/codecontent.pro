@@ -66,9 +66,10 @@
                             <a class="nav-link" href="#hero">Home</a>
                             <a class="nav-link" href="#services">Services</a>
                             <a class="nav-link" href="#why-education">Why Education</a>
-                            <a class="nav-link" href="#starter-offer">Starter Offer</a>
+                            <a class="nav-link" href="#trusted-experience">Portfolio</a>
                             <a class="nav-link" href="#process">Process</a>
-                            <a class="nav-link" href="#trusted-experience">Trust</a>
+                            <a class="nav-link" href="#starter-offer">Starter Offer</a>
+                            
                             <a class="nav-link" href="#founder-story">Founder</a>
                             <a class="nav-link" href="#contact">Contact</a>
                             <a class="button-primary" href="#contact">Book a call</a>
