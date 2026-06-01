@@ -5,7 +5,7 @@
             $siteTitle = trim($__env->yieldContent('title', 'CodeContent.pro | Developer Education That Helps Startups Grow'));
             $siteDescription = trim($__env->yieldContent('meta_description', 'Developer education that helps startups turn complex products into clear, adoptable experiences.'));
             $canonicalUrl = url()->current();
-            $shareImage = asset('favicon.ico');
+            $shareImage = asset('favicon.svg');
             $orgSchema = [
                 '@context' => 'https://schema.org',
                 '@type' => 'Organization',
@@ -21,6 +21,9 @@
         <meta name="description" content="{{ $siteDescription }}">
         <meta name="robots" content="index,follow">
         <meta name="theme-color" content="#FFFFFF">
+
+        <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
+        <link rel="alternate icon" href="{{ asset('favicon.ico') }}">
 
         <link rel="canonical" href="{{ $canonicalUrl }}">
 
@@ -45,7 +48,7 @@
     </head>
     <body class="min-h-screen">
         <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-[#FACC15] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-[#0A0A0A]">Skip to main content</a>
-        <div class="relative overflow-hidden">
+        <div class="relative">
             <div class="pointer-events-none absolute inset-x-0 top-0 h-[34rem] bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.10),transparent_55%)]"></div>
 
             <header class="sticky top-0 z-50 border-b border-[#E5E5E5]/80 bg-white/85 backdrop-blur">
