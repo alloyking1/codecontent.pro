@@ -270,8 +270,6 @@
     {{-- proof of works we've done --}}
     <section id="trusted-experience" class="section-pad border-t border-[#E5E5E5] bg-[linear-gradient(180deg,#FFFDF3_0%,#F8F8F8_38%,#FFFFFF_100%)]" x-data="trustedExperienceStats()" x-init="init()">
         <div class="site-shell relative">
-            <div class="pointer-events-none absolute inset-x-0 top-0 h-48 bg-[radial-gradient(circle_at_top_right,rgba(250,204,21,0.18),transparent_38%),radial-gradient(circle_at_left,rgba(0,0,0,0.04),transparent_35%)]"></div>
-
             <div class="relative max-w-4xl">
                 <div class="eyebrow">
                     <span class="h-2 w-2 rounded-full bg-[#FACC15]"></span>
@@ -279,7 +277,7 @@
                 </div>
 
                 <h2 class="mt-4 text-3xl font-semibold tracking-tight text-[#0A0A0A] sm:text-4xl lg:text-5xl">
-                    Proof That Developer Education Works
+                    Experience Across Developer Ecosystems
                 </h2>
 
                 <p class="mt-5 max-w-3xl text-base leading-8 text-[#525252] sm:text-lg">
@@ -287,14 +285,14 @@
                 </p>
             </div>
 
-            <div class="relative mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+            {{-- <div class="relative mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
                 <article class="card border-[#E7E1C3] bg-white/90 p-7 shadow-[0_12px_30px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95]">
                     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Years in Developer Education</p>
                     <p class="mt-3 text-4xl font-semibold tracking-tight text-[#0A0A0A] transition duration-300" x-text="stats[0].display">8+</p>
                 </article>
                 <article class="card border-[#E7E1C3] bg-white/90 p-7 shadow-[0_12px_30px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95]">
                     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Technical Articles Published</p>
-                    <p class="mt-3 text-4xl font-semibold tracking-tight text-[#0A0A0A] transition duration-300" x-text="stats[1].display">100+</p>
+                    <p class="mt-3 text-4xl font-semibold tracking-tight text-[#0A0A0A] transition duration-300" x-text="stats[1].display">30+</p>
                 </article>
                 <article class="card border-[#E7E1C3] bg-[linear-gradient(180deg,#FFF9DB_0%,#FFFFFF_100%)] p-7 shadow-[0_12px_30px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95]">
                     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Developers Reached</p>
@@ -302,9 +300,9 @@
                 </article>
                 <article class="card border-[#E7E1C3] bg-white/90 p-7 shadow-[0_12px_30px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95]">
                     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Educational Resources Created</p>
-                    <p class="mt-3 text-4xl font-semibold tracking-tight text-[#0A0A0A] transition duration-300" x-text="stats[3].display">100+</p>
+                    <p class="mt-3 text-4xl font-semibold tracking-tight text-[#0A0A0A] transition duration-300" x-text="stats[3].display">20+</p>
                 </article>
-            </div>
+            </div> --}}
 
             <div class="mt-14 grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
                 <div class="card p-8 sm:p-10">
@@ -328,30 +326,31 @@
             </div>
 
             <div class="mt-14">
-                <h3 class="text-2xl font-semibold tracking-tight text-[#0A0A0A]">Selected Work</h3>
+                <h3 class="text-2xl font-semibold tracking-tight text-[#0A0A0A]">Previous Works</h3>
 
-                <div class="mt-8 grid gap-6 lg:grid-cols-3">
+                {{-- <div class="mt-8 grid gap-6 lg:grid-cols-3"> --}}
+                <div class="mt-8 grid gap-6 lg:grid-cols-2">
                     <article class="group card bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95] hover:shadow-[0_16px_40px_rgba(0,0,0,0.06)]">
                         <span class="inline-flex rounded-full border border-[#E5E5E5] bg-[#F8F8F8] px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#525252]">Tutorial</span>
-                        <h4 class="mt-4 text-lg font-semibold tracking-tight text-[#0A0A0A]">Building Scalable APIs with Laravel</h4>
-                        <p class="mt-3 text-sm leading-7 text-[#525252]">A practical walkthrough showing teams how to design maintainable APIs with clear developer onboarding paths.</p>
-                        <a href="#contact" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#0A0A0A] transition group-hover:gap-3 group-hover:text-[#525252]">
+                        <h4 class="mt-4 text-lg font-semibold tracking-tight text-[#0A0A0A]">How to Search Images and Text Using MongoDB Vector Search With FastAPI</h4>
+                        <p class="mt-3 text-sm leading-7 text-[#525252]">Build an end-to-end vector search app with FastAPI and MongoDB Atlas. Learn to generate, store, and query text and image embeddings in this hands-on tutorial.</p>
+                        <a href="https://www.datacamp.com/tutorial/search-images-and-text-using-mongodb-vector-search" target="_blank" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#0A0A0A] transition group-hover:gap-3 group-hover:text-[#525252]">
                             Read More
                             <span aria-hidden="true">&rarr;</span>
                         </a>
                     </article>
 
                     <article class="group card bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95] hover:shadow-[0_16px_40px_rgba(0,0,0,0.06)]">
-                        <span class="inline-flex rounded-full border border-[#E5E5E5] bg-[#F8F8F8] px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#525252]">Guide</span>
-                        <h4 class="mt-4 text-lg font-semibold tracking-tight text-[#0A0A0A]">Getting Started with MongoDB Atlas</h4>
-                        <p class="mt-3 text-sm leading-7 text-[#525252]">A developer-first onboarding sequence to help teams move from setup to first successful implementation quickly.</p>
-                        <a href="#contact" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#0A0A0A] transition group-hover:gap-3 group-hover:text-[#525252]">
+                        <span class="inline-flex rounded-full border border-[#E5E5E5] bg-[#F8F8F8] px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#525252]">Product Education</span>
+                        <h4 class="mt-4 text-lg font-semibold tracking-tight text-[#0A0A0A]">Build a Simple Call Center With Laravel Tall Stack and Twilio Programmable Voice</h4>
+                        <p class="mt-3 text-sm leading-7 text-[#525252]"> A practical walkthrough showing how to use Twilio Programmable Voice to build a simple call center.</p>
+                        <a href="https://www.twilio.com/en-us/blog/build-simple-call-center-laravel-tall-stack-twilio-programmable-voice" target="_blank" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#0A0A0A] transition group-hover:gap-3 group-hover:text-[#525252]">
                             Read More
                             <span aria-hidden="true">&rarr;</span>
                         </a>
                     </article>
 
-                    <article class="group card bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95] hover:shadow-[0_16px_40px_rgba(0,0,0,0.06)]">
+                    {{-- <article class="group card bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-[#D7CC95] hover:shadow-[0_16px_40px_rgba(0,0,0,0.06)]">
                         <span class="inline-flex rounded-full border border-[#E5E5E5] bg-[#F8F8F8] px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#525252]">Documentation</span>
                         <h4 class="mt-4 text-lg font-semibold tracking-tight text-[#0A0A0A]">Modern Authentication for Web Applications</h4>
                         <p class="mt-3 text-sm leading-7 text-[#525252]">Clear educational content that helps developers implement secure authentication without onboarding friction.</p>
@@ -359,7 +358,7 @@
                             Read More
                             <span aria-hidden="true">&rarr;</span>
                         </a>
-                    </article>
+                    </article> --}}
                 </div>
             </div>
 
@@ -374,7 +373,6 @@
         </div>
     </section>
     {{-- proof ends here --}}
-
 
     <section id="process" class="section-pad border-t border-[#E5E5E5]">
         <div class="site-shell">
@@ -493,17 +491,25 @@
                     </div>
                     <h2 class="mt-4 text-3xl font-semibold tracking-tight text-[#0A0A0A] sm:text-4xl lg:text-5xl">Built from product and developer education experience.</h2>
                     <p class="mt-6 text-base leading-8 text-[#525252] sm:text-lg">
-                        CodeContent.pro started from a simple observation: many strong products fail to earn adoption because education is treated as an afterthought. Developers are asked to figure out complex systems without a coherent path.
+                        As a software developer, I’ve built and shipped real-world products that real users depend on. I’ve seen firsthand what happens when documentation is unclear, when onboarding is confusing, or when developers are left to figure things out on their own. I also work as a technical writer, which means I spend a lot of time translating complex systems into something other developers can actually follow and use.
                     </p>
                     <p class="mt-6 text-base leading-8 text-[#525252] sm:text-lg">
-                        We built this agency to close that gap. Our work combines technical depth, instructional design, and product thinking so developer-facing teams can make learning part of their growth engine.
+                        Over time, I realized I wasn’t just building or writing—I was constantly connecting two worlds: how products are built, and how developers experience them in the real world.
                     </p>
                     <p class="mt-6 text-base leading-8 text-[#525252] sm:text-lg">
-                        The goal is not more content. The goal is better outcomes: faster activation, lower support load, and developer experiences people trust.
+                        That’s what shaped the way I approach technical education. Not as an afterthought or a content task, but as part of the product itself. When it’s done well, it reduces friction, speeds up adoption, and helps developers actually trust what they’re building with.
+                        <br/>
+                        So what I focus on now is simple: taking real engineering experience, product thinking, and clear technical writing, and combining them into learning materials that actually help developers move forward without getting stuck.
                     </p>
 
                     <div class="mt-8 flex flex-wrap items-center gap-3">
-                        <a href="#contact" class="button-primary">Talk to the founder</a>
+                        <a href="https://www.linkedin.com/in/moses-anumadu/" target="_blank" class="button-primary">
+                            Let's chat
+                            <span class="w-6 px-1">
+                                {{-- linkedin icon --}}
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" fill="#0F0F0F"></path> <path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z" fill="#0F0F0F"></path> <path d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z" fill="#0F0F0F"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#0F0F0F"></path> </g></svg>
+                            </span>
+                        </a>
                         <a href="#starter-offer" class="button-secondary">Start with the sprint</a>
                     </div>
                 </div>
@@ -551,7 +557,7 @@
                         <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#525252]">Direct contact</p>
                         <p class="mt-3 text-base font-semibold text-[#0A0A0A]">Share your product and education goals.</p>
                         <p class="mt-2 text-sm leading-6 text-[#525252]">Email is the fastest way to start. Include your product URL and current onboarding challenge.</p>
-                        <a href="mailto:hello@codecontent.pro" class="button-primary mt-6 w-full sm:w-auto" aria-label="Email CodeContent at hello@codecontent.pro">hello@codecontent.pro</a>
+                        <a href="mailto:moses@codecontent.pro" class="button-primary mt-6 w-full sm:w-auto" aria-label="Email CodeContent at moses@codecontent.pro">moses@codecontent.pro</a>
                     </div>
                 </div>
             </div>

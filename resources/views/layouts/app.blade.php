@@ -70,7 +70,7 @@
                             <a class="nav-link" href="#process">Process</a>
                             <a class="nav-link" href="#starter-offer">Starter Offer</a>
                             
-                            <a class="nav-link" href="#founder-story">Founder</a>
+                            <a class="nav-link" href="#founder-story">About</a>
                             <a class="nav-link" href="#contact">Contact</a>
                             <a class="button-primary" href="#contact">Book a call</a>
                         </nav>
@@ -96,10 +96,10 @@
                                     <a class="nav-link" href="#hero" @click="mobileMenuOpen = false">Home</a>
                                     <a class="nav-link" href="#services" @click="mobileMenuOpen = false">Services</a>
                                     <a class="nav-link" href="#why-education" @click="mobileMenuOpen = false">Why Education</a>
-                                    <a class="nav-link" href="#starter-offer" @click="mobileMenuOpen = false">Starter Offer</a>
                                     <a class="nav-link" href="#process" @click="mobileMenuOpen = false">Process</a>
-                                    <a class="nav-link" href="#trusted-experience" @click="mobileMenuOpen = false">Trust</a>
-                                    <a class="nav-link" href="#founder-story" @click="mobileMenuOpen = false">Founder</a>
+                                    <a class="nav-link" href="#starter-offer" @click="mobileMenuOpen = false">Starter Offer</a>
+                                    <a class="nav-link" href="#trusted-experience" @click="mobileMenuOpen = false">Portfolio</a>
+                                    <a class="nav-link" href="#founder-story" @click="mobileMenuOpen = false">About</a>
                                     <a class="nav-link" href="#contact" @click="mobileMenuOpen = false">Contact</a>
                                     <a class="button-primary w-full sm:w-fit" href="#contact" @click="mobileMenuOpen = false">Book a call</a>
                                 </div>
@@ -126,7 +126,7 @@
                             <a class="hover:text-[#0A0A0A]" href="#starter-offer">Starter Offer</a>
                             <a class="hover:text-[#0A0A0A]" href="#process">Process</a>
                             <a class="hover:text-[#0A0A0A]" href="#contact">Contact</a>
-                            <a class="hover:text-[#0A0A0A]" href="mailto:hello@codecontent.pro">hello@codecontent.pro</a>
+                            <a class="hover:text-[#0A0A0A]" href="mailto:hello@codecontent.pro">moses@codecontent.pro</a>
                         </div>
                     </div>
 
