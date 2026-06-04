@@ -37,6 +37,18 @@
 
         <main class="relative z-20 py-10 sm:py-12">
             <div class="site-shell">
+                @if (session('success'))
+                    <div class="mb-6 rounded-2xl border border-[#DCFCE7] bg-[#F0FDF4] px-5 py-4 text-sm font-medium text-[#166534]">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
+                @if (session('error'))
+                    <div class="mb-6 rounded-2xl border border-[#FEE2E2] bg-[#FEF2F2] px-5 py-4 text-sm font-medium text-[#B91C1C]">
+                        {{ session('error') }}
+                    </div>
+                @endif
+
                 @yield('content')
             </div>
         </main>

@@ -13,7 +13,7 @@ Route::get('/', function () {
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/posts', [AdminPostController::class, 'index'])->name('posts.index');
-    Route::get('/categories', [AdminCategoryController::class, 'index'])->name('categories.index');
+    Route::resource('/categories', AdminCategoryController::class)->except('show');
 });
 
 Route::middleware(['auth'])->get('/dashboard', function () {
