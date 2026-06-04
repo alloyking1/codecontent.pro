@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\CategoryController as AdminCategoryController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PostController as AdminPostController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -10,9 +11,11 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-    Route::get('/posts', [AdminPostController::class, 'index'])->name('posts.index');
+    Route::resource('/posts', AdminPostController::class)->except('show');
     Route::resource('/categories', AdminCategoryController::class)->except('show');
 });
 

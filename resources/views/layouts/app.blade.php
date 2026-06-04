@@ -73,6 +73,7 @@
 
                         <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
                             <a class="nav-link" href="#hero">Home</a>
+                            <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
                             <a class="nav-link" href="#services">Services</a>
                             <a class="nav-link" href="#why-education">Why Education</a>
                             <a class="nav-link" href="#trusted-experience">Portfolio</a>
@@ -103,6 +104,7 @@
                             <div class="site-shell py-4">
                                 <div class="flex flex-col gap-4">
                                     <a class="nav-link" href="#hero" @click="mobileMenuOpen = false">Home</a>
+                                    <a class="nav-link" href="{{ route('blog.index') }}" @click="mobileMenuOpen = false">Blog</a>
                                     <a class="nav-link" href="#services" @click="mobileMenuOpen = false">Services</a>
                                     <a class="nav-link" href="#why-education" @click="mobileMenuOpen = false">Why Education</a>
                                     <a class="nav-link" href="#process" @click="mobileMenuOpen = false">Process</a>
@@ -131,6 +133,7 @@
                         </div>
 
                         <div class="flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-[#525252]">
+                            <a class="hover:text-[#0A0A0A]" href="{{ route('blog.index') }}">Blog</a>
                             <a class="hover:text-[#0A0A0A]" href="#services">Services</a>
                             <a class="hover:text-[#0A0A0A]" href="#starter-offer">Starter Offer</a>
                             <a class="hover:text-[#0A0A0A]" href="#process">Process</a>
