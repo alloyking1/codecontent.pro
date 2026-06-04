@@ -17,13 +17,15 @@
                         <span class="flex h-10 w-10 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8] text-sm font-bold">CC</span>
                         <div>
                             <p class="text-sm font-semibold tracking-tight">CodeContent.pro</p>
-                            <p class="text-xs text-[#525252]">Admin</p>
+                            <p class="text-xs text-muted">Admin</p>
                         </div>
                     </div>
 
                     <nav class="flex flex-wrap items-center gap-3 sm:gap-6" aria-label="Admin navigation">
-                        <a href="{{ route('admin.dashboard') }}" class="text-sm font-medium text-[#0A0A0A]">Dashboard</a>
-                        <a href="{{ route('home') }}" class="text-sm font-medium text-[#525252] transition hover:text-[#0A0A0A]">View site</a>
+                        <a href="{{ route('admin.dashboard') }}" class="text-sm font-medium transition {{ request()->routeIs('admin.dashboard') ? 'text-[#0A0A0A]' : 'text-muted hover:text-[#0A0A0A]' }}">Dashboard</a>
+                        <a href="{{ route('admin.posts.index') }}" class="text-sm font-medium transition {{ request()->routeIs('admin.posts.*') ? 'text-[#0A0A0A]' : 'text-muted hover:text-[#0A0A0A]' }}">Posts</a>
+                        <a href="{{ route('admin.categories.index') }}" class="text-sm font-medium transition {{ request()->routeIs('admin.categories.*') ? 'text-[#0A0A0A]' : 'text-muted hover:text-[#0A0A0A]' }}">Categories</a>
+                        <a href="{{ route('home') }}" class="text-sm font-medium text-muted transition hover:text-[#0A0A0A]">View site</a>
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
                             <button type="submit" class="button-secondary px-4 py-2 text-xs uppercase tracking-[0.14em]">Logout</button>
