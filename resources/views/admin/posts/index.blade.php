@@ -28,6 +28,7 @@
                             <tr>
                                 <th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-[0.16em] text-muted">Post</th>
                                 <th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-[0.16em] text-muted">Category</th>
+                                <th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-[0.16em] text-muted">Author</th>
                                 <th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-[0.16em] text-muted">Status</th>
                                 <th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-[0.16em] text-muted">Published</th>
                                 <th class="px-6 py-4 text-right text-xs font-semibold uppercase tracking-[0.16em] text-muted">Actions</th>
@@ -41,6 +42,7 @@
                                         <p class="mt-1 text-xs text-muted">/{{ $post->slug }}</p>
                                     </td>
                                     <td class="px-6 py-4 text-muted">{{ $post->category?->name }}</td>
+                                    <td class="px-6 py-4 text-muted">{{ $post->author?->name ?? 'Unassigned' }}</td>
                                     <td class="px-6 py-4">
                                         <div class="flex flex-wrap items-center gap-2">
                                             @if ($post->is_published)

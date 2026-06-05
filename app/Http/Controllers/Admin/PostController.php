@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\StorePostRequest;
 use App\Http\Requests\Admin\UpdatePostRequest;
+use App\Models\Author;
 use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\RedirectResponse;
@@ -17,7 +18,7 @@ class PostController extends Controller
     public function index(): View
     {
         $posts = Post::query()
-            ->with('category')
+            ->with(['category', 'author'])
             ->latest()
             ->paginate(12);
 
@@ -30,7 +31,11 @@ class PostController extends Controller
             ->orderBy('name')
             ->get();
 
-        return view('admin.posts.create', compact('categories'));
+        $authors = Author::query()
+            ->orderBy('name')
+            ->get();
+
+        return view('admin.posts.create', compact('categories', 'authors'));
     }
 
     public function store(StorePostRequest $request): RedirectResponse
@@ -61,7 +66,11 @@ class PostController extends Controller
             ->orderBy('name')
             ->get();
 
-        return view('admin.posts.edit', compact('post', 'categories'));
+        $authors = Author::query()
+            ->orderBy('name')
+            ->get();
+
+        return view('admin.posts.edit', compact('post', 'categories', 'authors'));
     }
 
     public function update(UpdatePostRequest $request, Post $post): RedirectResponse

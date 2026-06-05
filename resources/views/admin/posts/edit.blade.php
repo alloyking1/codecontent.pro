@@ -22,6 +22,7 @@
                 @include('admin.posts.partials.form-fields', [
                     'post' => $post,
                     'categories' => $categories,
+                    'authors' => $authors,
                     'submitLabel' => 'Update Post',
                 ])
             </form>

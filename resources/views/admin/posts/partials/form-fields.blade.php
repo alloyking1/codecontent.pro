@@ -7,6 +7,7 @@
     $metaDescriptionValue = old('meta_description', $post?->meta_description ?? '');
     $metaKeywordsValue = old('meta_keywords', $post?->meta_keywords ?? '');
     $selectedCategory = (int) old('category_id', $post?->category_id ?? 0);
+    $selectedAuthor = (int) old('author_id', $post?->author_id ?? 0);
     $publishedAtValue = old('published_at', $post?->published_at?->format('Y-m-d\TH:i'));
     $isFeatured = old('is_featured', $post?->is_featured ?? false);
     $isPublished = old('is_published', $post?->is_published ?? false);
@@ -105,6 +106,21 @@
                 @endforeach
             </select>
             @error('category_id')
+                <p class="mt-2 text-sm text-[#B91C1C]">{{ $message }}</p>
+            @enderror
+        </div>
+
+        <div class="card-surface border border-[#E5E5E5] p-5 sm:p-6">
+            <label for="author_id" class="block text-sm font-semibold text-[#0A0A0A]">Author</label>
+            <select id="author_id" name="author_id" required class="mt-2 w-full rounded-2xl border border-[#E5E5E5] bg-white px-4 py-3 text-sm text-[#0A0A0A] shadow-sm focus:border-[#0A0A0A] focus:ring-[#0A0A0A]">
+                <option value="">Select author</option>
+                @foreach ($authors as $author)
+                    <option value="{{ $author->id }}" @selected($selectedAuthor === $author->id)>
+                        {{ $author->name }}
+                    </option>
+                @endforeach
+            </select>
+            @error('author_id')
                 <p class="mt-2 text-sm text-[#B91C1C]">{{ $message }}</p>
             @enderror
         </div>

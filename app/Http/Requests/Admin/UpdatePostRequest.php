@@ -23,6 +23,7 @@ class UpdatePostRequest extends FormRequest
             'body' => ['required', 'string'],
             'featured_image' => ['nullable', 'image', 'mimes:jpg,jpeg,png,webp', 'max:5120'],
             'category_id' => ['required', 'integer', 'exists:categories,id'],
+            'author_id' => ['required', 'integer', 'exists:authors,id'],
             'meta_title' => ['nullable', 'string', 'max:255'],
             'meta_description' => ['nullable', 'string'],
             'meta_keywords' => ['nullable', 'string'],

@@ -2,6 +2,9 @@
 
 @section('title', 'Blog | CodeContent.pro')
 @section('meta_description', 'Insights on developer education, documentation, product education, and SaaS growth from CodeContent.pro.')
+@section('canonical_url', route('blog.index'))
+@section('og_title', 'Blog | CodeContent.pro')
+@section('og_description', 'Insights on developer education, documentation, product education, and SaaS growth from CodeContent.pro.')
 
 @section('content')
     <section class="section-pad pt-20 sm:pt-24 lg:pt-28" x-data="blogListing({ posts: @js($postsPayload), categories: @js($categoriesPayload) })">
@@ -52,7 +55,7 @@
                                 <span>Featured</span>
                             </div>
 
-                            <a href="{{ url('/blog/'.$featuredPost->slug) }}" class="button-primary mt-7">Read article</a>
+                            <a href="{{ route('blog.show', $featuredPost->slug) }}" class="button-primary mt-7">Read article</a>
                         </div>
                     </article>
                 @else
