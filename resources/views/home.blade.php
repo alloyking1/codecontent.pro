@@ -6,99 +6,38 @@
 @section('content')
     <section id="hero" class="section-pad pt-20 sm:pt-24 lg:pt-28">
         <div class="site-shell">
-            <div class="grid gap-14 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
-                <div class="max-w-3xl">
-                    <div class="eyebrow">
-                        <span class="h-2 w-2 rounded-full bg-[#FACC15]"></span>
-                        Developer education for SaaS and platform teams
-                    </div>
-
-                    <h1 class="mt-6 max-w-3xl text-5xl font-semibold tracking-tight text-[#0A0A0A] sm:text-6xl lg:text-7xl">
-                        Developer education that helps startups grow.
-                    </h1>
-
-                    <p class="mt-6 max-w-2xl text-lg leading-8 text-[#525252] sm:text-xl sm:leading-9">
-                        We help startups and SaaS companies turn complex products into clear educational experiences that improve developer adoption, reduce support burden, and speed up activation.
-                    </p>
-
-                    <div class="mt-10 flex flex-col gap-3 sm:flex-row">
-                        <a href="#contact" class="button-primary">Book a strategy call</a>
-                        <a href="#services" class="button-secondary">Explore services</a>
-                    </div>
-
-                    <div class="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 text-sm text-[#525252]">
-                        <span class="inline-flex items-center gap-2.5">
-                            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8]">
-                                <svg class="h-3.5 w-3.5 text-[#0A0A0A]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
-                                    <path d="M4 10h12M10 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                            Faster activation
-                        </span>
-                        <span class="inline-flex items-center gap-2.5">
-                            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8]">
-                                <svg class="h-3.5 w-3.5 text-[#0A0A0A]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
-                                    <path d="M4 10h12M10 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                            Better onboarding
-                        </span>
-                        <span class="inline-flex items-center gap-2.5">
-                            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8]">
-                                <svg class="h-3.5 w-3.5 text-[#0A0A0A]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
-                                    <path d="M4 10h12M10 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                            Reduced support burden
-                        </span>
-                    </div>
+            <div class="text-center">
+                <div class="eyebrow">
+                    <span class="h-2 w-2 rounded-full bg-[#FACC15]"></span>
+                    Developer education for SaaS and platform teams
                 </div>
-
-                <div class="card-surface p-8 sm:p-10">
-                    <div class="flex items-center gap-4">
-                        {{-- <div class="inline-flex h-16 w-16 items-center justify-center rounded-full border border-[#E5E5E5] text-xl" aria-hidden="true"> --}}
-                        <div class="inline-flex items-center justify-center rounded-full border border-[#E5E5E5] text-xl" aria-hidden="true">
-                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQG1CSmVRhcomA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728111048385?e=1781740800&v=beta&t=lFmSuO0jRFrtNaTmO0_SeWjM0ZRtZivcE6ON-xVRMLQ"
-                                class="rounded-full"
-                            alt="">
-                        </div>
-                        <div>
-                            <p class="mt-1 text-xl font-semibold tracking-tight text-[#0A0A0A]">Hi, I'm Moses</p>
-                            <p class="mt-1 text-sm text-[#525252]">Software Developer, Technical Content Engineer, and Developer Educator.</p>
-                        </div>
-                    </div>
-
-                    <p class="mt-6 text-sm leading-7 text-[#525252]">I've spent years helping developers learn through technical content, tutorials, documentation, and educational resources.</p>
-
-                    <p class="mt-4 text-sm leading-7 text-[#525252]">Experience includes work across developer ecosystems such as MongoDB and Twilio.</p>
-
-                    <div class="mt-8 border-t border-[#E5E5E5] pt-6">
-                        <ul class="space-y-3 text-sm text-[#525252]">
-                            <li class="inline-flex items-center gap-2.5">
-                                <span class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#E5E5E5] bg-white text-xs font-semibold text-[#0A0A0A]">✓</span>
-                                Developer-first perspective
-                            </li>
-                            <li class="inline-flex items-center gap-2.5">
-                                <span class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#E5E5E5] bg-white text-xs font-semibold text-[#0A0A0A]">✓</span>
-                                Senior-led execution
-                            </li>
-                            <li class="inline-flex items-center gap-2.5">
-                                <span class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#E5E5E5] bg-white text-xs font-semibold text-[#0A0A0A]">✓</span>
-                                Technical and educational expertise
-                            </li>
-                        </ul>
-                    </div>
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 leading-tight">
+                    Helping Software Companies Create Better Documentation,
+                    Developer Content, and Learning Experiences
+                </h1>
+    
+                <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
+                    CodeContent helps SaaS companies, developer tool providers, startups,
+                    and engineering teams improve developer onboarding, documentation,
+                    technical content, and educational resources.
+                </p>
+    
+                <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/services/technical-writing"
+                       class="px-6 py-3 rounded-xl bg-black text-white font-medium hover:bg-gray-800 transition">
+                        Explore Technical Writing
+                    </a>
+    
+                    <a href="/services/developer-education"
+                       class="px-6 py-3 rounded-xl border border-gray-300 text-gray-800 font-medium hover:bg-gray-50 transition">
+                        Explore Developer Education
+                    </a>
                 </div>
             </div>
 
-            <div class="mt-14 border-y border-[#E5E5E5] py-8">
-                <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
-                    <div class="text-sm font-medium text-[#525252]">Technical content creation</div>
-                    <div class="text-sm font-medium text-[#525252]">Documentation systems</div>
-                    <div class="text-sm font-medium text-[#525252]">Developer tutorials</div>
-                    <div class="text-sm font-medium text-[#525252]">Onboarding support</div>
-                </div>
-            </div>
+            {{-- ------------------------------- --}}
+            {{-- <div class="grid gap-14 lg:grid-cols-[1.2fr_0.8fr] lg:items-center"> --}}
+            
         </div>
     </section>
 
@@ -120,7 +59,7 @@
                 </p>
             </div>
 
-            <div class="mt-14 grid gap-8 lg:grid-cols-1 xl:grid-cols-4 xl:gap-10">
+            {{-- <div class="mt-14 grid gap-8 lg:grid-cols-1 xl:grid-cols-4 xl:gap-10">
                 <article class="card p-8 sm:p-9">
                     <div class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8]">
                         <svg class="h-4.5 w-4.5 text-[#0A0A0A]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
@@ -193,6 +132,62 @@
                     <p class="mt-4 text-sm font-semibold text-[#0A0A0A]">Community-building support</p>
                     <p class="mt-3 text-sm leading-6 text-[#525252]">Support for programs that help developers share wins, stay engaged, and deepen adoption.</p>
                 </article>
+            </div> --}}
+            <div class="mt-10 grid md:grid-cols-2 gap-8">
+    
+                <!-- Technical Writing -->
+                <div class="p-8 border rounded-2xl shadow-sm hover:shadow-md transition bg-white">
+                    <h3 class="text-2xl font-semibold text-gray-900">
+                        Technical Writing
+                    </h3>
+
+                    <p class="mt-3 text-gray-600">
+                        Clear, accurate, developer-focused content designed to
+                        improve onboarding, reduce support burden, and help users
+                        succeed faster.
+                    </p>
+
+                    <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                        <li>Tutorials & How-To Guides</li>
+                        <li>API Documentation</li>
+                        <li>Docs as Code</li>
+                        <li>Project Specification Documents</li>
+                        <li>Technical Documentation</li>
+                        <li>Knowledge Base Content</li>
+                    </ul>
+
+                    <a href="/services/technical-writing"
+                       class="inline-block mt-6 text-black font-medium hover:underline">
+                        Learn More →
+                    </a>
+                </div>
+
+                <!-- Developer Education -->
+                <div class="p-8 border rounded-2xl shadow-sm hover:shadow-md transition bg-white">
+                    <h3 class="text-2xl font-semibold text-gray-900">
+                        Developer Education
+                    </h3>
+
+                    <p class="mt-3 text-gray-600">
+                        Learning experiences designed to help developers acquire
+                        skills, understand products, and achieve measurable outcomes.
+                    </p>
+
+                    <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                        <li>Course Creation</li>
+                        <li>Instructional Design</li>
+                        <li>Developer Education Programs</li>
+                        <li>Technical Training Materials</li>
+                        <li>Developer Advocacy Support</li>
+                        <li>Curriculum Design</li>
+                    </ul>
+
+                    <a href="/services/developer-education"
+                       class="inline-block mt-6 text-black font-medium hover:underline">
+                        Learn More →
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -211,7 +206,9 @@
                     </h2>
 
                     <p class="mt-5 max-w-2xl text-base leading-8 text-[#525252] sm:text-lg">
-                        Developer education closes the gap between product capability and developer confidence. It shortens time-to-value, improves retention, and gives teams more room to build instead of repeatedly explaining.
+                        We combine software development knowledge with technical writing,
+                instructional design, and developer education practices to help
+                teams communicate complex ideas clearly.
                     </p>
 
                     <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -563,4 +560,258 @@
             </div>
         </div>
     </section>
+
+
+
+    {{-- new home page --}}
+    <section class="bg-white">
+        <div class="max-w-6xl mx-auto px-6 py-20">
+    
+            <!-- HERO -->
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 leading-tight">
+                    Helping Software Companies Create Better Documentation,
+                    Developer Content, and Learning Experiences
+                </h1>
+    
+                <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
+                    CodeContent helps SaaS companies, developer tool providers, startups,
+                    and engineering teams improve developer onboarding, documentation,
+                    technical content, and educational resources.
+                </p>
+    
+                <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/services/technical-writing"
+                       class="px-6 py-3 rounded-xl bg-black text-white font-medium hover:bg-gray-800 transition">
+                        Explore Technical Writing
+                    </a>
+    
+                    <a href="/services/developer-education"
+                       class="px-6 py-3 rounded-xl border border-gray-300 text-gray-800 font-medium hover:bg-gray-50 transition">
+                        Explore Developer Education
+                    </a>
+                </div>
+            </div>
+    
+            <!-- INTRO -->
+            <div class="mt-20 grid md:grid-cols-2 gap-10 items-start">
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    Great products fail when users struggle to understand them.
+                    Whether you're building APIs, SaaS platforms, internal tools,
+                    or developer-facing products, clear documentation and effective
+                    learning experiences can dramatically improve adoption,
+                    onboarding, and user success.
+                </p>
+    
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    We combine software development knowledge with technical writing,
+                    instructional design, and developer education practices to help
+                    teams communicate complex ideas clearly.
+                </p>
+            </div>
+    
+            <!-- SERVICES -->
+            <div class="mt-24">
+                <h2 class="text-3xl font-bold text-gray-900 text-center">
+                    Services
+                </h2>
+    
+                <div class="mt-10 grid md:grid-cols-2 gap-8">
+    
+                    <!-- Technical Writing -->
+                    <div class="p-8 border rounded-2xl shadow-sm hover:shadow-md transition bg-white">
+                        <h3 class="text-2xl font-semibold text-gray-900">
+                            Technical Writing
+                        </h3>
+    
+                        <p class="mt-3 text-gray-600">
+                            Clear, accurate, developer-focused content designed to
+                            improve onboarding, reduce support burden, and help users
+                            succeed faster.
+                        </p>
+    
+                        <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                            <li>Tutorials & How-To Guides</li>
+                            <li>API Documentation</li>
+                            <li>Docs as Code</li>
+                            <li>Project Specification Documents</li>
+                            <li>Technical Documentation</li>
+                            <li>Knowledge Base Content</li>
+                        </ul>
+    
+                        <a href="/services/technical-writing"
+                           class="inline-block mt-6 text-black font-medium hover:underline">
+                            Learn More →
+                        </a>
+                    </div>
+    
+                    <!-- Developer Education -->
+                    <div class="p-8 border rounded-2xl shadow-sm hover:shadow-md transition bg-white">
+                        <h3 class="text-2xl font-semibold text-gray-900">
+                            Developer Education
+                        </h3>
+    
+                        <p class="mt-3 text-gray-600">
+                            Learning experiences designed to help developers acquire
+                            skills, understand products, and achieve measurable outcomes.
+                        </p>
+    
+                        <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                            <li>Course Creation</li>
+                            <li>Instructional Design</li>
+                            <li>Developer Education Programs</li>
+                            <li>Technical Training Materials</li>
+                            <li>Developer Advocacy Support</li>
+                            <li>Curriculum Design</li>
+                        </ul>
+    
+                        <a href="/services/developer-education"
+                           class="inline-block mt-6 text-black font-medium hover:underline">
+                            Learn More →
+                        </a>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <!-- BENEFITS -->
+            <div class="mt-24">
+                <h2 class="text-3xl font-bold text-center text-gray-900">
+                    Why Companies Work With CodeContent
+                </h2>
+    
+                <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    
+                    <div class="p-6 border rounded-xl">
+                        <h3 class="font-semibold text-gray-900">Developer-Focused</h3>
+                        <p class="mt-2 text-gray-600">
+                            Content created with developers, engineers, and technical audiences in mind.
+                        </p>
+                    </div>
+    
+                    <div class="p-6 border rounded-xl">
+                        <h3 class="font-semibold text-gray-900">Technical Understanding</h3>
+                        <p class="mt-2 text-gray-600">
+                            Built by someone with hands-on software development experience.
+                        </p>
+                    </div>
+    
+                    <div class="p-6 border rounded-xl">
+                        <h3 class="font-semibold text-gray-900">Clear Communication</h3>
+                        <p class="mt-2 text-gray-600">
+                            Complex concepts transformed into practical, accessible content.
+                        </p>
+                    </div>
+    
+                    <div class="p-6 border rounded-xl">
+                        <h3 class="font-semibold text-gray-900">Business Impact</h3>
+                        <p class="mt-2 text-gray-600">
+                            Better documentation improves adoption and reduces support load.
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <!-- PROCESS -->
+            <div class="mt-24">
+                <h2 class="text-3xl font-bold text-center text-gray-900">
+                    How We Work
+                </h2>
+    
+                <div class="mt-10 grid md:grid-cols-4 gap-6">
+    
+                    <div class="p-6 bg-gray-50 rounded-xl">
+                        <h3 class="font-semibold">1. Discovery</h3>
+                        <p class="mt-2 text-gray-600">
+                            Understand your product, audience, and goals.
+                        </p>
+                    </div>
+    
+                    <div class="p-6 bg-gray-50 rounded-xl">
+                        <h3 class="font-semibold">2. Research</h3>
+                        <p class="mt-2 text-gray-600">
+                            Review systems, docs, and technical context.
+                        </p>
+                    </div>
+    
+                    <div class="p-6 bg-gray-50 rounded-xl">
+                        <h3 class="font-semibold">3. Creation</h3>
+                        <p class="mt-2 text-gray-600">
+                            Build documentation and learning materials.
+                        </p>
+                    </div>
+    
+                    <div class="p-6 bg-gray-50 rounded-xl">
+                        <h3 class="font-semibold">4. Delivery</h3>
+                        <p class="mt-2 text-gray-600">
+                            Review, refine, and ship production-ready content.
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <!-- BLOG -->
+            <div class="mt-24 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">
+                    Insights on Technical Writing and Developer Education
+                </h2>
+    
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Explore practical guides, tutorials, and industry insights covering
+                    documentation, onboarding, instructional design, and developer learning.
+                </p>
+    
+                <a href="/blog"
+                   class="inline-block mt-6 px-6 py-3 bg-black text-white rounded-xl hover:bg-gray-800 transition">
+                    Visit the Blog
+                </a>
+            </div>
+    
+            <!-- FREE KIT -->
+            <div class="mt-24 bg-gray-50 p-10 rounded-2xl">
+                <h2 class="text-3xl font-bold text-center text-gray-900">
+                    Free Developer Documentation Starter Kit
+                </h2>
+    
+                <p class="mt-4 text-center text-gray-600">
+                    Download templates to help your team create better documentation.
+                </p>
+    
+                <ul class="mt-6 grid md:grid-cols-2 gap-2 text-gray-700 max-w-3xl mx-auto list-disc list-inside">
+                    <li>API Documentation Template</li>
+                    <li>Technical Tutorial Template</li>
+                    <li>Project Specification Template</li>
+                    <li>Documentation Review Checklist</li>
+                </ul>
+    
+                <div class="text-center mt-8">
+                    <a href="/resources/documentation-starter-kit"
+                       class="px-6 py-3 bg-black text-white rounded-xl hover:bg-gray-800 transition">
+                        Get the Free Starter Kit
+                    </a>
+                </div>
+            </div>
+    
+            <!-- CTA -->
+            <div class="mt-24 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">
+                    Need Better Documentation or Developer Education Resources?
+                </h2>
+    
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Let's discuss how CodeContent can help your team create
+                    developer-focused content, documentation, and learning experiences.
+                </p>
+    
+                <a href="/book-a-call"
+                   class="inline-block mt-6 px-6 py-3 bg-black text-white rounded-xl hover:bg-gray-800 transition">
+                    Book a Discovery Call
+                </a>
+            </div>
+    
+        </div>
+    </section>
+    {{-- new home page ends --}}
 @endsection

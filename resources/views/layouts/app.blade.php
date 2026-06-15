@@ -98,16 +98,16 @@
 
                         <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
                             <a class="nav-link" href="#hero">Home</a>
-                            <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
-                            <a class="nav-link" href="{{ route('authors.index') }}">Authors</a>
                             <a class="nav-link" href="#services">Services</a>
-                            <a class="nav-link" href="#why-education">Why Education</a>
+                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#founder-story">About</a>
+                            <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
+                            {{-- <a class="nav-link" href="{{ route('authors.index') }}">Authors</a> --}}
+                            {{-- <a class="nav-link" href="#why-education">Why Education</a>
                             <a class="nav-link" href="#trusted-experience">Portfolio</a>
                             <a class="nav-link" href="#process">Process</a>
-                            <a class="nav-link" href="#starter-offer">Starter Offer</a>
+                            <a class="nav-link" href="#starter-offer">Starter Offer</a> --}}
                             
-                            <a class="nav-link" href="#founder-story">About</a>
-                            <a class="nav-link" href="#contact">Contact</a>
                             <a class="button-primary" href="#contact">Book a call</a>
                         </nav>
 
@@ -131,7 +131,7 @@
                                 <div class="flex flex-col gap-4">
                                     <a class="nav-link" href="#hero" @click="mobileMenuOpen = false">Home</a>
                                     <a class="nav-link" href="{{ route('blog.index') }}" @click="mobileMenuOpen = false">Blog</a>
-                                    <a class="nav-link" href="{{ route('authors.index') }}" @click="mobileMenuOpen = false">Authors</a>
+                                    {{-- <a class="nav-link" href="{{ route('authors.index') }}" @click="mobileMenuOpen = false">Authors</a> --}}
                                     <a class="nav-link" href="#services" @click="mobileMenuOpen = false">Services</a>
                                     <a class="nav-link" href="#why-education" @click="mobileMenuOpen = false">Why Education</a>
                                     <a class="nav-link" href="#process" @click="mobileMenuOpen = false">Process</a>
