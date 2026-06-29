@@ -137,7 +137,7 @@
                             </div>
                         
                             {{-- <a class="nav-link" href="#contact">Contact</a> --}}
-                            <a class="nav-link" href="/about">About</a>
+                            <a class="nav-link" href="{{ route('about') }}">About</a>
                             <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
                         
                             {{-- <a class="button-primary" href="#contact">Book a call</a> --}}
@@ -195,13 +195,14 @@
                         </div>
 
                         <div class="flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-[#525252]">
+                            <a class="hover:text-[#0A0A0A]" href="{{ route('home') }}">Home</a>
+                            {{-- <a class="hover:text-[#0A0A0A]" href="{{ route('authors.index') }}">Authors</a> --}}
+                            <a class="hover:text-[#0A0A0A]" href="{{ route('technical-writing') }}">Services</a>
+                            {{-- <a class="hover:text-[#0A0A0A]" href="#starter-offer">Starter Offer</a>
+                            <a class="hover:text-[#0A0A0A]" href="#process">Process</a> --}}
                             <a class="hover:text-[#0A0A0A]" href="{{ route('blog.index') }}">Blog</a>
-                            <a class="hover:text-[#0A0A0A]" href="{{ route('authors.index') }}">Authors</a>
-                            <a class="hover:text-[#0A0A0A]" href="#services">Services</a>
-                            <a class="hover:text-[#0A0A0A]" href="#starter-offer">Starter Offer</a>
-                            <a class="hover:text-[#0A0A0A]" href="#process">Process</a>
-                            <a class="hover:text-[#0A0A0A]" href="#contact">Contact</a>
-                            <a class="hover:text-[#0A0A0A]" href="mailto:hello@codecontent.pro">moses@codecontent.pro</a>
+                            <a class="hover:text-[#0A0A0A]" href="{{ route('about') }}">About</a>
+                            {{-- <a class="hover:text-[#0A0A0A]" href="mailto:hello@codecontent.pro">moses@codecontent.pro</a> --}}
                         </div>
                     </div>
 

@@ -28,7 +28,8 @@
             </p>
 
             <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/services/technical-writing"
+                <a 
+                    target="_blank" href="https://calendly.com/moses-codecontent/30min"
                    class="px-6 py-3 rounded-xl bg-black text-white font-medium hover:bg-gray-800 transition">
                     Book a Discovery Call
                 </a>
@@ -195,13 +196,14 @@
             Ready to Improve Your Technical Documentation?
         </h2>
 
-        <p class="mt-6 text-lg text-gray-600">
+        <p class="mt-6 text-lg text-gray-600 pb-4">
             Whether you're launching a new product, improving developer onboarding,
             or modernising existing documentation, we'd love to help.
         </p>
 
-        <a href="/book-a-call"
-           class="inline-block mt-10 rounded-lg bg-primary px-8 py-4 text-white hover:opacity-90">
+        <a 
+            target="_blank" href="https://calendly.com/moses-codecontent/30min"
+            class="px-6 py-3 rounded-xl bg-black text-white font-medium hover:bg-gray-800 transition">
             Book a Discovery Call
         </a>
 

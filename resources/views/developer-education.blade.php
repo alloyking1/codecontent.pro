@@ -27,7 +27,8 @@
             </p>
 
             <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/book-a-call"
+                <a 
+                target="_blank" href="https://calendly.com/moses-codecontent/30min"
                    class="px-6 py-3 rounded-xl bg-black text-white font-medium hover:bg-gray-800 transition">
                     Book a Discovery Call
                 </a>
@@ -209,14 +210,15 @@
             Ready to Build Better Developer Learning Experiences?
         </h2>
 
-        <p class="mt-6 text-lg text-gray-600">
+        <p class="mt-6 text-lg text-gray-600 mb-4">
             From technical courses and onboarding programmes to instructional design
             and developer advocacy content, CodeContent helps organisations educate
             developers with clarity, confidence, and measurable impact.
         </p>
 
-        <a href="/book-a-call"
-           class="inline-block mt-10 rounded-lg bg-primary px-8 py-4 text-white hover:opacity-90">
+        <a 
+            target="_blank" href="https://calendly.com/moses-codecontent/30min"
+            class="px-6 py-3 rounded-xl bg-black text-white font-medium hover:bg-gray-800 transition">
             Book a Discovery Call
         </a>
 

@@ -274,8 +274,10 @@
             and explore how I can help.
         </p>
 
-        <a href="/book-a-call"
-           class="inline-block mt-10 rounded-xl bg-black px-8 py-4 text-white font-medium hover:bg-gray-800 transition">
+        <a
+           class="inline-block mt-10 rounded-xl bg-black px-8 py-4 text-white font-medium hover:bg-gray-800 transition"
+           target="_blank" href="https://calendly.com/moses-codecontent/30min"
+        >
             Book a Discovery Call
         </a>
 
