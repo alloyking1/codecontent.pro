@@ -6,12 +6,16 @@ use App\Http\Controllers\Admin\PostController as AdminPostController;
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PagesController;
 use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [PagesController::class, 'home'])->name('home');
+Route::prefix('services')->group(function () {
+    Route::get('/', [PagesController::class, 'services'])->name('services');
+    Route::get('/technical-writing', [PagesController::class, 'technicalWriting'])->name('technical-writing');
+    Route::get('/developer-education', [PagesController::class, 'developerEducation'])->name('developer-education');
+});
 
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{post:slug}', [BlogController::class, 'show'])->name('blog.show');

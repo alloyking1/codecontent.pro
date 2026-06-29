@@ -97,19 +97,53 @@
                         </a>
 
                         <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
-                            <a class="nav-link" href="#hero">Home</a>
-                            <a class="nav-link" href="#services">Services</a>
+                            <a class="nav-link" href="{{ route('home') }}">Home</a>
+                        
+                            <!-- Services Dropdown -->
+                            <div class="relative group py-2">
+                                <button
+                                    type="button"
+                                    class="nav-link inline-flex items-center gap-1"
+                                >
+                                    Services
+                        
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 transition-transform duration-200 group-hover:rotate-180"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                        
+                                <div
+                                    class="absolute left-0 top-full z-50 hidden w-64 rounded-xl border border-slate-200 bg-white p-2 shadow-xl group-hover:block"
+                                >
+                                    <a
+                                        href="{{ route('technical-writing') }}"
+                                        class="block rounded-lg px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100"
+                                    >
+                                        Technical Writing
+                                    </a>
+                        
+                                    <a
+                                        href="{{ route('developer-education') }}"
+                                        class="block rounded-lg px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100"
+                                    >
+                                        Developer Education
+                                    </a>
+                                </div>
+                            </div>
+                        
                             <a class="nav-link" href="#contact">Contact</a>
                             <a class="nav-link" href="#founder-story">About</a>
                             <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
-                            {{-- <a class="nav-link" href="{{ route('authors.index') }}">Authors</a> --}}
-                            {{-- <a class="nav-link" href="#why-education">Why Education</a>
-                            <a class="nav-link" href="#trusted-experience">Portfolio</a>
-                            <a class="nav-link" href="#process">Process</a>
-                            <a class="nav-link" href="#starter-offer">Starter Offer</a> --}}
-                            
+                        
                             <a class="button-primary" href="#contact">Book a call</a>
                         </nav>
+
+                        
 
                         <button
                             type="button"
@@ -129,10 +163,10 @@
                         <div x-cloak x-show="mobileMenuOpen" x-transition class="absolute left-0 right-0 top-full border-b border-[#E5E5E5] bg-white shadow-[0_16px_40px_rgba(0,0,0,0.06)] lg:hidden">
                             <div class="site-shell py-4">
                                 <div class="flex flex-col gap-4">
-                                    <a class="nav-link" href="#hero" @click="mobileMenuOpen = false">Home</a>
+                                    <a class="nav-link" href="{{  route('home')  }}" @click="mobileMenuOpen = false">Home</a>
                                     <a class="nav-link" href="{{ route('blog.index') }}" @click="mobileMenuOpen = false">Blog</a>
                                     {{-- <a class="nav-link" href="{{ route('authors.index') }}" @click="mobileMenuOpen = false">Authors</a> --}}
-                                    <a class="nav-link" href="#services" @click="mobileMenuOpen = false">Services</a>
+                                    <a class="nav-link" href="{{ route('services') }}" @click="mobileMenuOpen = false">Services</a>
                                     <a class="nav-link" href="#why-education" @click="mobileMenuOpen = false">Why Education</a>
                                     <a class="nav-link" href="#process" @click="mobileMenuOpen = false">Process</a>
                                     <a class="nav-link" href="#starter-offer" @click="mobileMenuOpen = false">Starter Offer</a>
