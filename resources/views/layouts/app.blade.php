@@ -131,16 +131,17 @@
                                         href="{{ route('developer-education') }}"
                                         class="block rounded-lg px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100"
                                     >
-                                        Developer Education
+                                    Developer Education & Training
                                     </a>
                                 </div>
                             </div>
                         
-                            <a class="nav-link" href="#contact">Contact</a>
-                            <a class="nav-link" href="#founder-story">About</a>
+                            {{-- <a class="nav-link" href="#contact">Contact</a> --}}
+                            <a class="nav-link" href="/about">About</a>
                             <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
                         
-                            <a class="button-primary" href="#contact">Book a call</a>
+                            {{-- <a class="button-primary" href="#contact">Book a call</a> --}}
+                            <a class="button-primary" target="_blank" href="https://calendly.com/moses-codecontent/30min">Book a call</a>
                         </nav>
 
                         
@@ -167,12 +168,12 @@
                                     <a class="nav-link" href="{{ route('blog.index') }}" @click="mobileMenuOpen = false">Blog</a>
                                     {{-- <a class="nav-link" href="{{ route('authors.index') }}" @click="mobileMenuOpen = false">Authors</a> --}}
                                     <a class="nav-link" href="{{ route('services') }}" @click="mobileMenuOpen = false">Services</a>
-                                    <a class="nav-link" href="#why-education" @click="mobileMenuOpen = false">Why Education</a>
-                                    <a class="nav-link" href="#process" @click="mobileMenuOpen = false">Process</a>
-                                    <a class="nav-link" href="#starter-offer" @click="mobileMenuOpen = false">Starter Offer</a>
-                                    <a class="nav-link" href="#trusted-experience" @click="mobileMenuOpen = false">Portfolio</a>
-                                    <a class="nav-link" href="#founder-story" @click="mobileMenuOpen = false">About</a>
-                                    <a class="nav-link" href="#contact" @click="mobileMenuOpen = false">Contact</a>
+                                    {{-- <a class="nav-link" href="#why-education" @click="mobileMenuOpen = false">Why Education</a> --}}
+                                    {{-- <a class="nav-link" href="#process" @click="mobileMenuOpen = false">Process</a> --}}
+                                    {{-- <a class="nav-link" href="#starter-offer" @click="mobileMenuOpen = false">Starter Offer</a> --}}
+                                    {{-- <a class="nav-link" href="#trusted-experience" @click="mobileMenuOpen = false">Portfolio</a> --}}
+                                    <a class="nav-link" href="/about" @click="mobileMenuOpen = false">About</a>
+                                    {{-- <a class="nav-link" href="#contact" @click="mobileMenuOpen = false">Contact</a> --}}
                                     <a class="button-primary w-full sm:w-fit" href="#contact" @click="mobileMenuOpen = false">Book a call</a>
                                 </div>
                             </div>

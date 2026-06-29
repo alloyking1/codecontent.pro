@@ -26,4 +26,9 @@ class PagesController extends Controller
     {
         return view('developer-education');
     }
+
+    public function about()
+    {
+        return view('about');
+    }
 }

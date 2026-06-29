@@ -17,6 +17,8 @@ Route::prefix('services')->group(function () {
     Route::get('/developer-education', [PagesController::class, 'developerEducation'])->name('developer-education');
 });
 
+Route::get('/about', [PagesController::class, 'about'])->name('about');
+
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{post:slug}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('/authors', [AuthorController::class, 'index'])->name('authors.index');
