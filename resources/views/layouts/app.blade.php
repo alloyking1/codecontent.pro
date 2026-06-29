@@ -139,8 +139,6 @@
                             {{-- <a class="nav-link" href="#contact">Contact</a> --}}
                             <a class="nav-link" href="{{ route('about') }}">About</a>
                             <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
-                        
-                            {{-- <a class="button-primary" href="#contact">Book a call</a> --}}
                             <a class="button-primary" target="_blank" href="https://calendly.com/moses-codecontent/30min">Book a call</a>
                         </nav>
 
@@ -165,16 +163,49 @@
                             <div class="site-shell py-4">
                                 <div class="flex flex-col gap-4">
                                     <a class="nav-link" href="{{  route('home')  }}" @click="mobileMenuOpen = false">Home</a>
+
+                                    <div x-data="{ open: false }" class="relative">
+
+                                        <button
+                                            @click="open = !open"
+                                            class="flex w-full items-center justify-between"
+                                        >
+                                            <span>Services</span>
+                                    
+                                            <svg
+                                                class="h-4 w-4 transition"
+                                                :class="{ 'rotate-180': open }"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke="currentColor"
+                                            >
+                                                <path stroke-linecap="round"
+                                                      stroke-linejoin="round"
+                                                      stroke-width="2"
+                                                      d="M19 9l-7 7-7-7"/>
+                                            </svg>
+                                        </button>
+                                    
+                                        <div
+                                            x-show="open"
+                                            x-transition
+                                            class="mt-2 pl-4 space-y-2"
+                                        >
+                                            <a href="{{ route('technical-writing') }}" class="block py-2">
+                                                Technical Writing
+                                            </a>
+                                    
+                                            <a href="{{ route('developer-education') }}" class="block py-2">
+                                                Developer Education & Training
+                                            </a>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <a class="nav-link" href="{{ route('about') }}" @click="mobileMenuOpen = false">About</a>
                                     <a class="nav-link" href="{{ route('blog.index') }}" @click="mobileMenuOpen = false">Blog</a>
-                                    {{-- <a class="nav-link" href="{{ route('authors.index') }}" @click="mobileMenuOpen = false">Authors</a> --}}
-                                    <a class="nav-link" href="{{ route('services') }}" @click="mobileMenuOpen = false">Services</a>
-                                    {{-- <a class="nav-link" href="#why-education" @click="mobileMenuOpen = false">Why Education</a> --}}
-                                    {{-- <a class="nav-link" href="#process" @click="mobileMenuOpen = false">Process</a> --}}
-                                    {{-- <a class="nav-link" href="#starter-offer" @click="mobileMenuOpen = false">Starter Offer</a> --}}
-                                    {{-- <a class="nav-link" href="#trusted-experience" @click="mobileMenuOpen = false">Portfolio</a> --}}
-                                    <a class="nav-link" href="/about" @click="mobileMenuOpen = false">About</a>
-                                    {{-- <a class="nav-link" href="#contact" @click="mobileMenuOpen = false">Contact</a> --}}
-                                    <a class="button-primary w-full sm:w-fit" href="#contact" @click="mobileMenuOpen = false">Book a call</a>
+                                    <a class="button-primary w-full sm:w-fit" target="_blank" href="https://calendly.com/moses-codecontent/30min" @click="mobileMenuOpen = false">Book a call</a>
                                 </div>
                             </div>
                         </div>
@@ -196,12 +227,11 @@
 
                         <div class="flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-[#525252]">
                             <a class="hover:text-[#0A0A0A]" href="{{ route('home') }}">Home</a>
-                            {{-- <a class="hover:text-[#0A0A0A]" href="{{ route('authors.index') }}">Authors</a> --}}
                             <a class="hover:text-[#0A0A0A]" href="{{ route('technical-writing') }}">Services</a>
-                            {{-- <a class="hover:text-[#0A0A0A]" href="#starter-offer">Starter Offer</a>
-                            <a class="hover:text-[#0A0A0A]" href="#process">Process</a> --}}
-                            <a class="hover:text-[#0A0A0A]" href="{{ route('blog.index') }}">Blog</a>
                             <a class="hover:text-[#0A0A0A]" href="{{ route('about') }}">About</a>
+                            <a class="hover:text-[#0A0A0A]" href="{{ route('blog.index') }}">Blog</a>
+                            <a class="hover:text-[#0A0A0A]" href="{{ route('authors.index') }}">Authors</a>
+                            
                             {{-- <a class="hover:text-[#0A0A0A]" href="mailto:hello@codecontent.pro">moses@codecontent.pro</a> --}}
                         </div>
                     </div>
