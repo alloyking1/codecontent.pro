@@ -2,9 +2,11 @@
 
 use App\Http\Controllers\Admin\CategoryController as AdminCategoryController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\EmailListController as AdminEmailListController;
 use App\Http\Controllers\Admin\PostController as AdminPostController;
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\EmailListController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\SitemapController;
@@ -26,11 +28,13 @@ Route::get('/authors/{author:slug}', [AuthorController::class, 'show'])->name('a
 Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemaps.index');
 Route::get('/sitemaps/pages.xml', [SitemapController::class, 'pages'])->name('sitemaps.pages');
 Route::get('/sitemaps/blog.xml', [SitemapController::class, 'blog'])->name('sitemaps.blog');
+Route::post('/email-list', [EmailListController::class, 'store'])->name('email-list.store');
 
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('/posts', AdminPostController::class)->except('show');
     Route::resource('/categories', AdminCategoryController::class)->except('show');
+    Route::resource('/email-list', AdminEmailListController::class)->only(['index', 'destroy']);
 });
 
 Route::middleware(['auth'])->get('/dashboard', function () {
