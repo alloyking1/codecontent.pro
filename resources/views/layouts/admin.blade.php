@@ -26,6 +26,7 @@
                         <a href="{{ route('admin.posts.index') }}" class="text-sm font-medium transition {{ request()->routeIs('admin.posts.*') ? 'text-[#0A0A0A]' : 'text-muted hover:text-[#0A0A0A]' }}">Posts</a>
                         <a href="{{ route('admin.categories.index') }}" class="text-sm font-medium transition {{ request()->routeIs('admin.categories.*') ? 'text-[#0A0A0A]' : 'text-muted hover:text-[#0A0A0A]' }}">Categories</a>
                         <a href="{{ route('admin.email-list.index') }}" class="text-sm font-medium transition {{ request()->routeIs('admin.email-list.*') ? 'text-[#0A0A0A]' : 'text-muted hover:text-[#0A0A0A]' }}">Email List</a>
+                        <a href="{{ route('admin.author-requests.index') }}" class="text-sm font-medium transition {{ request()->routeIs('admin.author-requests.*') ? 'text-[#0A0A0A]' : 'text-muted hover:text-[#0A0A0A]' }}">Author Requests</a>
                         <a href="{{ route('home') }}" class="text-sm font-medium text-muted transition hover:text-[#0A0A0A]">View site</a>
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf

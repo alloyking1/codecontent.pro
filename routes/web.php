@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\Admin\AuthorRequestController as AdminAuthorRequestController;
 use App\Http\Controllers\Admin\CategoryController as AdminCategoryController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EmailListController as AdminEmailListController;
 use App\Http\Controllers\Admin\PostController as AdminPostController;
 use App\Http\Controllers\AuthorController;
+use App\Http\Controllers\AuthorRequestController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\EmailListController;
 use App\Http\Controllers\ProfileController;
@@ -24,6 +26,10 @@ Route::get('/about', [PagesController::class, 'about'])->name('about');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{post:slug}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('/authors', [AuthorController::class, 'index'])->name('authors.index');
+Route::get('/authors/write-for-us', function () {
+    return view('authors.write-for-us');
+})->name('authors.write-for-us');
+Route::post('/author-requests', [AuthorRequestController::class, 'store'])->name('author-requests.store');
 Route::get('/authors/{author:slug}', [AuthorController::class, 'show'])->name('authors.show');
 Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemaps.index');
 Route::get('/sitemaps/pages.xml', [SitemapController::class, 'pages'])->name('sitemaps.pages');
@@ -35,6 +41,7 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::resource('/posts', AdminPostController::class)->except('show');
     Route::resource('/categories', AdminCategoryController::class)->except('show');
     Route::resource('/email-list', AdminEmailListController::class)->only(['index', 'destroy']);
+    Route::resource('/author-requests', AdminAuthorRequestController::class)->only(['index', 'show', 'destroy']);
 });
 
 Route::middleware(['auth'])->get('/dashboard', function () {

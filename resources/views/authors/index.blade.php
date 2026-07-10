@@ -20,6 +20,10 @@
                 <p class="mt-6 max-w-3xl text-base leading-8 text-muted sm:text-lg">
                     Explore the contributors sharing practical insights on developer education, documentation, and SaaS growth.
                 </p>
+
+                <div class="mt-8 flex flex-wrap items-center gap-3">
+                    <a href="{{ route('authors.write-for-us') }}" class="button-primary">Write for us</a>
+                </div>
             </div>
 
             @if ($authors->count() > 0)

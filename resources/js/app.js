@@ -110,4 +110,60 @@ Alpine.data('emailListForm', (url) => ({
 	},
 }));
 
+Alpine.data('authorRequestForm', (url) => ({
+	name: '',
+	email: '',
+	job_role: '',
+	website_url: '',
+	message: '',
+	publications: '',
+	isSubmitting: false,
+	feedback: '',
+	feedbackClasses: 'border-[#E5E5E5] bg-white text-[#525252]',
+	async submit() {
+		const form = this.$el;
+		const formData = new FormData(form);
+		const csrfToken = form.querySelector('input[name="_token"]')?.value || '';
+
+		this.feedback = '';
+		this.isSubmitting = true;
+		this.feedbackClasses = 'border-[#E5E5E5] bg-white text-[#525252]';
+
+		try {
+			const response = await fetch(url, {
+				method: 'POST',
+				headers: {
+					'X-Requested-With': 'XMLHttpRequest',
+					'X-CSRF-TOKEN': csrfToken,
+				},
+				body: formData,
+			});
+
+			const payload = await response.json().catch(() => ({}));
+
+			if (!response.ok) {
+				const firstError = payload.errors ? Object.values(payload.errors)[0]?.[0] : payload.message;
+				this.feedback = firstError || 'Something went wrong. Please try again.';
+				this.feedbackClasses = 'border-[#FEE2E2] bg-[#FEF2F2] text-[#B91C1C]';
+				return;
+			}
+
+			form.reset();
+			this.name = '';
+			this.email = '';
+			this.job_role = '';
+			this.website_url = '';
+			this.message = '';
+			this.publications = '';
+			this.feedback = payload.message || 'Thanks! Your author request has been received.';
+			this.feedbackClasses = 'border-[#DCFCE7] bg-[#F0FDF4] text-[#166534]';
+		} catch (error) {
+			this.feedback = 'Something went wrong. Please try again.';
+			this.feedbackClasses = 'border-[#FEE2E2] bg-[#FEF2F2] text-[#B91C1C]';
+		} finally {
+			this.isSubmitting = false;
+		}
+	},
+}));
+
 Alpine.start();

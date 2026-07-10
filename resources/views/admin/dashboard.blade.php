@@ -14,7 +14,7 @@
             Track your publishing system at a glance. Use the navigation to manage posts and categories.
         </p>
 
-        <div class="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+        <div class="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
             <article class="card border-[#E7E1C3] bg-white/90 p-6 shadow-[0_12px_30px_rgba(0,0,0,0.04)]">
                 <p class="text-xs font-semibold uppercase tracking-[0.18em] text-muted">Total Posts</p>
                 <p class="mt-3 text-4xl font-semibold tracking-tight text-[#0A0A0A]">{{ $stats['total_posts'] }}</p>
@@ -33,6 +33,16 @@
             <article class="card border-[#E7E1C3] bg-white/90 p-6 shadow-[0_12px_30px_rgba(0,0,0,0.04)]">
                 <p class="text-xs font-semibold uppercase tracking-[0.18em] text-muted">Published Posts</p>
                 <p class="mt-3 text-4xl font-semibold tracking-tight text-[#0A0A0A]">{{ $stats['published_posts'] }}</p>
+            </article>
+
+            <article class="card border-[#E7E1C3] bg-white/90 p-6 shadow-[0_12px_30px_rgba(0,0,0,0.04)]">
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-muted">Subscribers</p>
+                <p class="mt-3 text-4xl font-semibold tracking-tight text-[#0A0A0A]">{{ $stats['total_subscribers'] }}</p>
+            </article>
+
+            <article class="card border-[#E7E1C3] bg-white/90 p-6 shadow-[0_12px_30px_rgba(0,0,0,0.04)]">
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-muted">Author Requests</p>
+                <p class="mt-3 text-4xl font-semibold tracking-tight text-[#0A0A0A]">{{ $stats['total_author_requests'] }}</p>
             </article>
         </div>
 
