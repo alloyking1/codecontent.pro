@@ -216,8 +216,13 @@
 
             <main id="main-content">
                 @yield('content')
+                <div class="border-t border-[#E5E5E5]">
+                    <x-email-list />
+                </div>
             </main>
 
+            
+            {{-- email list --}}
             <footer class="border-t border-[#E5E5E5] bg-white">
                 <div class="site-shell py-8">
                     <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">

@@ -216,7 +216,6 @@
     </section>
 
     {{-- proof of works we've done --}}
-    <section id="trusted-experience" class="section-pad border-t border-[#E5E5E5] bg-[linear-gradient(180deg,#FFFDF3_0%,#F8F8F8_38%,#FFFFFF_100%)]" x-data="trustedExperienceStats()" x-init="init()">
         <section id="trusted-experience" class="section-pad border-t border-[#E5E5E5] bg-[linear-gradient(180deg,#FFFDF3_0%,#F8F8F8_38%,#FFFFFF_100%)]">
             <div class="site-shell">
         
@@ -308,7 +307,6 @@
                 </div>
             </div>
         </section>
-    </section>
     {{-- proof ends here --}}
 
     {{-- process --}}
@@ -435,7 +433,4 @@
             {{-- featured post end here --}}
         </div>
     </section>
-
-    {{-- email list --}}
-    <x-email-list />
 @endsection
