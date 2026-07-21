@@ -12,19 +12,15 @@
         <div class="max-w-6xl mx-auto text-center">
             <div class="eyebrow">
                 <span class="h-2 w-2 rounded-full bg-[#FACC15]"></span>
-                Technical Writing Services
+                Documentation Services
             </div>
 
             <h1 class="mt-6 md:text-6xl text-4xl font-bold tracking-tight">
-                Technical Writing Services for SaaS Companies, APIs, and Developer Tools
+                Documentation Engineering for Developer Tools, SaaS, and Engineering Teams
             </h1>
 
             <p class="mt-6 text-lg max-w-3xl mx-auto text-gray-600 leading-8">
-                Clear documentation is essential for developer adoption, faster onboarding,
-                and better user experiences. At <strong>CodeContent</strong>, we help software
-                companies create high-quality technical documentation, tutorials, API
-                documentation, and developer-focused content that makes complex products
-                easier to understand and use.
+                Without clear documentation, even the best products can fail to reach their potential. We help teams create educational experiences that reduce friction, improve onboarding, and help developers get value from products faster.
             </p>
 
             <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
@@ -77,82 +73,26 @@
     <div class="container mx-auto px-4 max-w-6xl">
 
         <div class="max-w-6xl mx-auto text-center">
+
             <div class="eyebrow">
                 <span class="h-2 w-2 rounded-full bg-[#FACC15]"></span>
-                Technical Writing
+                Services
             </div>
+
             <h2 class="text-3xl max-w-xl mx-auto font-semibold tracking-tight text-[#0A0A0A] sm:text-4xl lg:text-5xl pb-4">
-                Technical Writing Services
+                Documentation for Engineering Teams
             </h2>
+
         </div>
 
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
-            <div class="rounded-xl border border-[#E5E5E5] p-8">
-                <h3 class="text-xl font-semibold mb-4">
-                    API Documentation
-                </h3>
-
-                <p class="text-gray-600">
-                    Well-structured API documentation that helps developers integrate
-                    with confidence and reduces implementation friction.
-                </p>
-            </div>
-
-            <div class="rounded-xl border border-[#E5E5E5] p-8">
-                <h3 class="text-xl font-semibold mb-4">
-                    Tutorials & How-To Guides
-                </h3>
-
-                <p class="text-gray-600">
-                    Step-by-step tutorials that help developers learn quickly and
-                    accomplish real-world tasks.
-                </p>
-            </div>
-
-            <div class="rounded-xl border border-[#E5E5E5] p-8">
-                <h3 class="text-xl font-semibold mb-4">
-                    Docs as Code
-                </h3>
-
-                <p class="text-gray-600">
-                    Documentation workflows using Git-based version control and
-                    developer-friendly documentation practices.
-                </p>
-            </div>
-
-            <div class="rounded-xl border border-[#E5E5E5] p-8">
-                <h3 class="text-xl font-semibold mb-4">
-                    Project Specification Documents
-                </h3>
-
-                <p class="text-gray-600">
-                    Clear project requirements and technical specifications that
-                    improve communication between stakeholders and developers.
-                </p>
-            </div>
-
-            <div class="rounded-xl border border-[#E5E5E5] p-8">
-                <h3 class="text-xl font-semibold mb-4">
-                    Developer Guides
-                </h3>
-
-                <p class="text-gray-600">
-                    Installation guides, onboarding documentation, user manuals,
-                    and implementation guides for technical products.
-                </p>
-            </div>
-
-            <div class="rounded-xl border border-[#E5E5E5] p-8">
-                <h3 class="text-xl font-semibold mb-4">
-                    Knowledge Base Content
-                </h3>
-
-                <p class="text-gray-600">
-                    Searchable help centres and documentation that reduce support
-                    tickets and improve customer self-service.
-                </p>
-            </div>
+            @foreach ($docsServices as $service)
+                <x-custom.card-two 
+                    title="{{ $service['title'] }}" 
+                    description="{{ $service['description'] }}"
+                />
+            @endforeach
+        </div>
 
         </div>
 

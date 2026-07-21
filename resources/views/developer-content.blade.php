@@ -16,14 +16,14 @@
             </div>
 
             <h1 class="mt-6 md:text-6xl text-4xl font-bold tracking-tight">
-                Create Learning Experiences That Help Developers Succeed
+                Content Production for Developer Tools & Platforms
             </h1>
 
             <p class="mt-6 text-lg max-w-3xl mx-auto text-gray-600 leading-8">
-                Great products deserve great education. CodeContent helps SaaS companies,
-                developer platforms, and engineering teams design technical learning
-                experiences that improve onboarding, increase product adoption, and help
-                developers build confidence faster.
+                At CodeContent, we build technical content growth engines driving results. Based on SEO and AEO research, tailored to your needs and designed to reach developers at every stage of their journey.
+                
+                We help companies create educational experiences that reduce friction, improve onboarding, and help developers get value from products faster.
+
             </p>
 
             <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
@@ -91,79 +91,18 @@
             </div>
 
             <h2 class="text-3xl max-w-xl mx-auto font-semibold tracking-tight text-[#0A0A0A] sm:text-4xl lg:text-5xl pb-4">
-                Developer Education Services
+                Technical Content Creation
             </h2>
 
         </div>
 
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
-            <div class="rounded-xl border border-[#E5E5E5] p-8">
-                <h3 class="text-xl font-semibold mb-4">
-                    Technical Course Development
-                </h3>
-
-                <p class="text-gray-600">
-                    End-to-end course creation for technical products, programming topics,
-                    developer tools, and engineering teams.
-                </p>
-            </div>
-
-            <div class="rounded-xl border border-[#E5E5E5] p-8">
-                <h3 class="text-xl font-semibold mb-4">
-                    Instructional Design
-                </h3>
-
-                <p class="text-gray-600">
-                    Learning experiences built around clear objectives, measurable outcomes,
-                    and developer-first teaching strategies.
-                </p>
-            </div>
-
-            <div class="rounded-xl border border-[#E5E5E5] p-8">
-                <h3 class="text-xl font-semibold mb-4">
-                    Curriculum Design
-                </h3>
-
-                <p class="text-gray-600">
-                    Structured learning paths that guide developers from foundational concepts
-                    to real-world application.
-                </p>
-            </div>
-
-            <div class="rounded-xl border border-[#E5E5E5] p-8">
-                <h3 class="text-xl font-semibold mb-4">
-                    Developer Onboarding Content
-                </h3>
-
-                <p class="text-gray-600">
-                    Educational resources that help new users, customers, and engineering teams
-                    become productive more quickly.
-                </p>
-            </div>
-
-            <div class="rounded-xl border border-[#E5E5E5] p-8">
-                <h3 class="text-xl font-semibold mb-4">
-                    Developer Advocacy Content
-                </h3>
-
-                <p class="text-gray-600">
-                    Workshops, tutorials, learning guides, and technical resources that help
-                    developer communities succeed.
-                </p>
-            </div>
-
-            <div class="rounded-xl border border-[#E5E5E5] p-8">
-                <h3 class="text-xl font-semibold mb-4">
-                    Internal Technical Training
-                </h3>
-
-                <p class="text-gray-600">
-                    Educational programmes designed to upskill engineering teams and improve
-                    technical knowledge across organisations.
-                </p>
-            </div>
-
+            @foreach ($services as $service)
+                <x-custom.card-two 
+                    title="{{ $service['title'] }}" 
+                    description="{{ $service['description'] }}"
+                />
+            @endforeach
         </div>
 
     </div>

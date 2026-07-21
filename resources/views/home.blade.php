@@ -4,7 +4,7 @@
 @section('meta_description', 'CodeContent.pro is a developer education agency helping startups and SaaS teams improve onboarding, activation, and developer adoption through content, documentation, and learning systems.')
 
 @section('content')
-    <section id="hero" class="section-pad pt-20 sm:pt-24 lg:pt-28">
+    <x-custom.hero-one>
         <div class="site-shell">
             <div class="text-center">
                 <div class="eyebrow">
@@ -23,20 +23,20 @@
                 </p>
     
                 <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="/services/technical-writing"
-                       class="px-6 py-3 rounded-xl bg-black text-white font-medium hover:bg-gray-800 transition">
-                        Explore Technical Writing
-                    </a>
-    
-                    <a href="/services/developer-education"
-                       class="px-6 py-3 rounded-xl border border-gray-300 text-gray-800 font-medium hover:bg-gray-50 transition">
-                        Explore Developer Education
-                    </a>
+                    <x-custom.btn-one
+                        :link="route('technical-content-creation')"
+                        text="Explore Technical Writing"
+                    />
+                    <x-custom.btn-one
+                        :link="route('documentation-engineering')"
+                        text="Explore Developer Education"
+                        type="secondary"
+                    />
                 </div>
             </div>
             
         </div>
-    </section>
+    </x-custom.hero-one>
 
     <section id="services" class="section-pad border-t border-[#E5E5E5] bg-[#F8F8F8]/60">
         <div class="site-shell">
@@ -47,7 +47,6 @@
                 </div>
 
                 <h2 class="mt-4 text-3xl font-semibold tracking-tight text-[#0A0A0A] sm:text-4xl">
-                    {{-- <span class="bg-[#FACC15] px-2 rounded-full">We design developer education systems that improve product adoption.</span> --}}
                     <span>We design developer education systems that improve product adoption.</span>
                 </h2>
 
@@ -56,111 +55,60 @@
                 </p>
             </div>
 
-            {{-- <div class="mt-14 grid gap-8 lg:grid-cols-1 xl:grid-cols-4 xl:gap-10">
-                <article class="card p-8 sm:p-9">
-                    <div class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8]">
-                        <svg class="h-4.5 w-4.5 text-[#0A0A0A]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
-                            <path d="M4 10h12M10 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <p class="mt-4 text-sm font-semibold text-[#0A0A0A]">Technical content creation</p>
-                    <p class="mt-3 text-sm leading-6 text-[#525252]">Narratives and explainers that help developers understand product value and implementation paths.</p>
-                </article>
-                <article class="card p-8 sm:p-9">
-                    <div class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8]">
-                        <svg class="h-4.5 w-4.5 text-[#0A0A0A]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
-                            <path d="M4 10h12M10 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <p class="mt-4 text-sm font-semibold text-[#0A0A0A]">Documentation</p>
-                    <p class="mt-3 text-sm leading-6 text-[#525252]">Structured docs that reduce confusion, lower support pressure, and improve developer self-serve success.</p>
-                </article>
-                <article class="card p-8 sm:p-9">
-                    <div class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8]">
-                        <svg class="h-4.5 w-4.5 text-[#0A0A0A]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
-                            <path d="M4 10h12M10 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <p class="mt-4 text-sm font-semibold text-[#0A0A0A]">Developer tutorials</p>
-                    <p class="mt-3 text-sm leading-6 text-[#525252]">Step-by-step onboarding content that guides developers from first touch to real product use.</p>
-                </article>
-                <article class="card p-8 sm:p-9">
-                    <div class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8]">
-                        <svg class="h-4.5 w-4.5 text-[#0A0A0A]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
-                            <path d="M4 10h12M10 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <p class="mt-4 text-sm font-semibold text-[#0A0A0A]">Video content</p>
-                    <p class="mt-3 text-sm leading-6 text-[#525252]">Clear walkthroughs for complex workflows, helping teams communicate quickly across learning styles.</p>
-                </article>
-                <article class="card p-8 sm:p-9">
-                    <div class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8]">
-                        <svg class="h-4.5 w-4.5 text-[#0A0A0A]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
-                            <path d="M4 10h12M10 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <p class="mt-4 text-sm font-semibold text-[#0A0A0A]">Developer onboarding</p>
-                    <p class="mt-3 text-sm leading-6 text-[#525252]">Intentional first-run journeys that reduce friction and improve activation in the first sessions.</p>
-                </article>
-                <article class="card p-8 sm:p-9">
-                    <div class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8]">
-                        <svg class="h-4.5 w-4.5 text-[#0A0A0A]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
-                            <path d="M4 10h12M10 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <p class="mt-4 text-sm font-semibold text-[#0A0A0A]">Instructional design</p>
-                    <p class="mt-3 text-sm leading-6 text-[#525252]">Learning architecture that aligns educational assets with product milestones and business goals.</p>
-                </article>
-                <article class="card p-8 sm:p-9">
-                    <div class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8]">
-                        <svg class="h-4.5 w-4.5 text-[#0A0A0A]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
-                            <path d="M4 10h12M10 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <p class="mt-4 text-sm font-semibold text-[#0A0A0A]">Learning systems</p>
-                    <p class="mt-3 text-sm leading-6 text-[#525252]">Repeatable education frameworks that scale with your platform and future feature launches.</p>
-                </article>
-                <article class="card p-8 sm:p-9">
-                    <div class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8]">
-                        <svg class="h-4.5 w-4.5 text-[#0A0A0A]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
-                            <path d="M4 10h12M10 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <p class="mt-4 text-sm font-semibold text-[#0A0A0A]">Community-building support</p>
-                    <p class="mt-3 text-sm leading-6 text-[#525252]">Support for programs that help developers share wins, stay engaged, and deepen adoption.</p>
-                </article>
-            </div> --}}
             <div class="mt-10 grid md:grid-cols-2 gap-8">
-    
-                <!-- Technical Writing -->
-                <div class="p-8 border border-[#E5E5E5] rounded-2xl shadow-sm hover:shadow-md transition bg-white">
+
+                <x-custom.card-one>
                     <h3 class="text-2xl font-semibold text-gray-900">
-                        Technical Writing
+                        Technical Content Creation
                     </h3>
 
                     <p class="mt-3 text-gray-600">
                         Clear, accurate, developer-focused content designed to
-                        improve onboarding, reduce support burden, and help users
-                        succeed faster.
+                        improve onboarding, and help developers
+                        adopt your product faster.
                     </p>
 
                     <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
-                        <li>Tutorials & How-To Guides</li>
-                        <li>API Documentation</li>
-                        <li>Docs as Code</li>
-                        <li>Project Specification Documents</li>
-                        <li>Technical Documentation</li>
-                        <li>Knowledge Base Content</li>
+                        <li>Blog Posts & Technical Articles</li>
+                        <li>Thought Leadership Pieces</li>
+                        <li>Comparison Pages</li>
+                        <li>Video Tutorials</li>
+                        <li>Technical Social Media Posts</li>
+                        <li>Technical newsletters</li>
                     </ul>
 
-                    <a href="/services/technical-writing"
+                    <a href="{{ route('technical-content-creation') }}"
                        class="inline-block mt-6 text-black font-medium hover:underline">
                         Learn More →
                     </a>
-                </div>
+                </x-custom.card-one>
+    
+                <!-- Technical Writing -->
+                <x-custom.card-one>
+                    <h3 class="text-2xl font-semibold text-gray-900">
+                        Documentation
+                    </h3>
+
+                    <p class="mt-3 text-gray-600">
+                        Users who have adopted your product need clear documentation. We can assist you with:
+                    </p>
+
+                    <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                        <li>Documentation Audits</li>
+                        <li>API Documentation</li>
+                        <li>Docs as Code Implementation</li>
+                        <li>Migration Guides</li>
+                        <li>Documentation Maintenance</li>
+                    </ul>
+
+                    <a href="{{ route('documentation-engineering') }}"
+                       class="inline-block mt-6 text-black font-medium hover:underline">
+                        Learn More →
+                    </a>
+                </x-custom.card-one>
 
                 <!-- Developer Education -->
-                <div class="p-8 border border-[#E5E5E5] rounded-2xl shadow-sm hover:shadow-md transition bg-white">
+                {{-- <div class="p-8 border border-[#E5E5E5] rounded-2xl shadow-sm hover:shadow-md transition bg-white">
                     <h3 class="text-2xl font-semibold text-gray-900">
                         Developer Education
                     </h3>
@@ -183,7 +131,7 @@
                        class="inline-block mt-6 text-black font-medium hover:underline">
                         Learn More →
                     </a>
-                </div>
+                </div> --}}
 
             </div>
         </div>

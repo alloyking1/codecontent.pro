@@ -17,8 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::prefix('services')->group(function () {
     Route::get('/', [PagesController::class, 'services'])->name('services');
-    Route::get('/technical-writing', [PagesController::class, 'technicalWriting'])->name('technical-writing');
-    Route::get('/developer-education', [PagesController::class, 'developerEducation'])->name('developer-education');
+    Route::get('/technical-content-creation', [PagesController::class, 'technicalContentCreation'])->name('technical-content-creation');
+    Route::get('/documentation-engineering', [PagesController::class, 'documentationEngineering'])->name('documentation-engineering');
 });
 
 Route::get('/about', [PagesController::class, 'about'])->name('about');
