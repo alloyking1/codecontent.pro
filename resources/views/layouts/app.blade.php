@@ -45,7 +45,12 @@
         @if ($metaKeywords !== '')
             <meta name="keywords" content="{{ $metaKeywords }}">
         @endif
-        <meta name="robots" content="index,follow">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Newsreader:opsz,wght@6..72,200..800&display=swap" rel="stylesheet">
+
         <meta name="theme-color" content="#FFFFFF">
 
         <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
@@ -82,18 +87,13 @@
         @stack('head')
     </head>
     <body class="min-h-screen">
-        <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-[#FACC15] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-[#0A0A0A]">Skip to main content</a>
+        <x-nav />
+        {{-- <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-[#FACC15] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-[#0A0A0A]">Skip to main content</a> --}}
         <div class="relative">
-            <div class="pointer-events-none absolute inset-x-0 top-0 h-[34rem] bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.10),transparent_55%)]"></div>
+            {{-- <div class="pointer-events-none absolute inset-x-0 top-0 h-[34rem] bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.10),transparent_55%)]"></div> --}}
 
-            <x-nav />
-
-            {{-- <main id="main-content"> --}}
             <main id="main-content">
                 @yield('content')
-                <div class="border-t border-[#E5E5E5]">
-                    <x-email-list />
-                </div>
             </main>
 
             
