@@ -8,7 +8,8 @@
 
 <section class="py-8 pb-20">
     <div class="site-shell grid md:grid-cols-2 gap-12">
-        <div class="md:pr-8">
+
+        <div class="md:pr-8 order-2 md:order-0">
             <div class="">
 
                 <x-custom.yellow-dot>{{ $yellowDotText }}</x-custom.yellow-dot>
@@ -31,6 +32,7 @@
                 {{ $slot }}
             </div>
         </div>
+
         <div>
             <img
                 src="{{ $image }}"
