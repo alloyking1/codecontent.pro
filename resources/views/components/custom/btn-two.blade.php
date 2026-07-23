@@ -10,15 +10,18 @@
         'danger' => 'bg-red-600 text-white hover:bg-red-700',
         'success' => 'bg-green-600 text-white hover:bg-green-700',
         default => 'bg-black text-white hover:bg-gray-800', // Matches your original 'primary'
-        'text' => 'text-gray-800 hover:text-gray-600 transition',
+        'primary' => 'text-gray-800 hover:text-gray-600 transition',
     };
 @endphp
 
 <div>
     <a href="{{ $link }}" 
         {{ $attributes->merge([
-            'class' => "px-6 py-3 rounded-xl font-medium transition {$typeClasses}"
+            'class' => " py-3 rounded-xl font-medium transition {$typeClasses}"
         ]) }}>
-        {{ $text }}
+        <div class="flex items-center gap-2 justify-center">
+            {{ $text }}
+            <x-icons.arrow-right class="h-4 w-4 transition group-hover:translate-x-1" />
+        </div>
     </a>
 </div>

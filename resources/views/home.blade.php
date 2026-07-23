@@ -36,6 +36,20 @@
     </x-custom.service-list>
 
     <x-custom.service-list
+        title="Digital Learning and Education Systems"
+        :leanMoreLink="route('technical-content-creation')"
+        yellowDotText="Edutech"
+        image="{{ asset('Education-bro.png') }}"
+        description="Educational technology Educational technology (EdTech) is the combined use of hardware, software, and learning theories to improve teaching and student performance. We help teams create educational experiences that reduce friction, improve onboarding, and help students get value from e-learning faster."
+
+    >
+        <div class="border-t border-[#E5E5E5] py-2">Instructional Design</div>
+        <div class="border-t border-[#E5E5E5] py-2">Curriculum development</div>
+        <div class="border-t border-[#E5E5E5] py-2">LMS Administration</div>
+        <div class="border-t border-[#E5E5E5] py-2">Learning Design and Technology</div>
+    </x-custom.service-list>
+
+    <x-custom.service-list
         title="Coding and Engineering Services"
         :leanMoreLink="route('technical-content-creation')"
         yellowDotText="Software engineering"
@@ -50,10 +64,11 @@
 
     
     <x-custom.hero-two 
+        :showButton="false"
         yellowDot="true" 
         yellowDotText="Developer education for SaaS and platform teams"
-        title="Why Developer Education Matters"
-        description="Great products fail when developers struggle to understand them. Developers expect clear onboarding, practical documentation, and learning resources that help them achieve success quickly. When those experiences are missing, adoption slows down, support requests increase, and valuable features go unused.">
+        title="Why Choose Us"
+        description="At CodeContent, we believe exceptional work starts with exceptional standards. We approach every project with a commitment to excellence, meticulous attention to detail, and a developer-first mindset that prioritizes clarity, usability, and long-term value. We communicate openly, collaborate closely, and strive to become a trusted extension of your team rather than just another service provider. By combining craftsmanship, accountability, and a culture of continuous improvement, we deliver technical content, documentation, and engineering solutions that are accurate, thoughtful, and built to make a lasting impact.">
     </x-custom.hero-two>
 
    

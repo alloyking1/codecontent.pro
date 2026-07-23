@@ -85,4 +85,55 @@ class PagesController extends Controller
     {
         return view('about');
     }
+
+    public function featuredPost()
+    {
+        return view('featured-post');
+    }
+
+    public function digitalLearning()
+    {
+        $services = [
+            [
+                'title' => 'Instructional Design for Developers',
+                'description' => 'Create engaging, interactive learning experiences with technical learning platforms that provide tutorials, courses, and hands-on labs. We create developer education solutions that accelerate onboarding, improve retention, and drive adoption.',
+            ],
+            [
+                'title' => 'Curriculum Development',
+                'description' => 'Curriculum development for technical learning platforms, online courses, and developer education programs. We design structured learning paths that help developers acquire skills, build confidence, and achieve their goals.',
+            ],
+            [
+                'title' => 'LMS Administration',
+                'description' => 'Manage and optimize your learning management system to ensure seamless delivery of educational content. We provide comprehensive LMS administration services to support your developer education initiatives.',
+            ],
+            [
+                'title' => 'Learning Design and Technology',
+                'description' => 'Leverage the latest learning technologies to create immersive, interactive educational experiences. We help you implement learning design best practices that enhance engagement, knowledge retention, and developer success.',
+            ],
+        ];
+        return view('digital-learning', ['services' => $services]);
+    }
+
+    public function softwareEngineering()
+    {
+        $services = [
+            [
+                'title' => 'AI Automation and AI Integration',
+                'description' => 'Automate complex tasks and processes with AI-powered solutions. We help you integrate AI capabilities into your software to enhance efficiency, accuracy, and customer experience.',
+            ],
+            [
+                'title' => 'Custom Software Development',
+                'description' => 'Build scalable, high-performance software solutions tailored to your business needs. We specialize in creating custom applications that integrate seamlessly with your existing systems and workflows.',
+            ],
+            [
+                'title' => 'Software Architecture Design',
+                'description' => 'Design robust and maintainable software architectures that support your business goals and technical requirements. We help you create scalable solutions that can evolve with your organization.',
+            ],
+            [
+                'title' => 'DevOps Implementation',
+                'description' => 'Implement efficient DevOps practices to streamline your development and deployment processes. We help you achieve faster release cycles, improved collaboration, and enhanced system reliability.',
+            ],
+        ];
+        return view('software-engineering', ['services' => $services]);
+    }
 }

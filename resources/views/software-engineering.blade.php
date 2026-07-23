@@ -7,14 +7,13 @@
 
 <x-custom.hero-two 
     yellowDot="true" 
-    yellowDotText="Developer Education"
-    title="Content Production for Developer Tools & Platforms"
-    description=" At CodeContent, we build technical content growth engines driving results. Based on SEO and AEO research, tailored to your needs and designed to reach developers at every stage of their journey.
-    We help companies create educational experiences that reduce friction, improve onboarding, and help developers get value from products faster."
+    yellowDotText="Software Engineering"
+    title="Software and AI Engineering Service"
+    description="Our team of professional software developers can handle your software development needs, from building custom applications to integrating AI solutions. We help companies create educational experiences that reduce friction, improve onboarding, and help developers get value from products faster."
     btnOneLink="https://calendly.com/moses-codecontent/30min"
     btnOneText="Book a Discovery Call"
     btnTwoLink="#services"
-    btnTwoText="Explore Developer Education"
+    btnTwoText="Explore Software Engineering"
     image="{{ asset('Questions-pana.png') }}"
 >
 </x-custom.hero-two>
@@ -23,7 +22,7 @@
 <x-custom.service-list-two
     title="What we can do for you"
     yellowDotText="Services"
-    description="We offer a range of services to help you create compelling technical content that resonates with developers and drives engagement. "
+    description="From software development to AI integration, we offer a range of services to help you create compelling technical solutions that resonate with developers and drive engagement. "
 >
     @foreach ($services as $service)
         <x-custom.card-two 

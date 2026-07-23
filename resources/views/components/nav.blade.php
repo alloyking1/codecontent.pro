@@ -47,18 +47,71 @@
                         >
                         Documentation Engineering
                         </a>
-                        {{-- <a
-                            href="{{ route('developer-education') }}"
+                        <a
+                            href="{{ route('digital-learning') }}"
                             class="block rounded-lg px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100"
                         >
-                        Engineering Services
-                        </a> --}}
+                        Educational Technology Services                        </a>
+                        <a
+                            href="{{ route('software-engineering') }}"
+                            class="block rounded-lg px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100"
+                        >
+                        Software Engineering Services
+                        </a>
                     </div>
                 </div>
             
                 {{-- <a class="nav-link" href="#contact">Contact</a> --}}
                 <a class="nav-link" href="{{ route('about') }}">About</a>
-                <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
+                {{-- <a class="nav-link" href="{{ route('about') }}">Featured Posts</a> --}}
+                {{-- <a class="nav-link" href="{{ route('blog.index') }}">Blog</a> --}}
+
+                <div class="relative group py-2">
+                    <button
+                        type="button"
+                        class="nav-link inline-flex items-center gap-1"
+                    >
+                        Insights
+            
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-4 w-4 transition-transform duration-200 group-hover:rotate-180"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+            
+                    <div
+                        class="absolute left-0 top-full z-50 hidden w-64 rounded-xl border border-slate-200 bg-white p-2 shadow-xl group-hover:block"
+                    >
+                        <div class="">
+                
+                            <a
+                                href="{{ route('blog.index') }}"
+                                class="block rounded-lg px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100"
+                            >
+                            Blog
+                            </a>
+                            <a
+                                href="#"
+                                class="block rounded-lg px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100"
+                            >
+                            Community
+                            <span class="bg-gray-500 text-white text-[12px]  rounded-full p-1">Coming soon</span>
+                            </a>
+                            <a
+                                href="#"
+                                class="block rounded-lg px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100"
+                            >
+                            Learning
+                            <span class="bg-gray-500 text-white text-[12px]  rounded-full p-1">Coming soon</span>
+                            </a>
+                        </di>
+                    </div>
+                </div>
+
                 <a class="button-primary" target="_blank" href="https://calendly.com/moses-codecontent/30min">Book a call</a>
             </nav>
 

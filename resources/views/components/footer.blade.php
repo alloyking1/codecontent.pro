@@ -12,11 +12,11 @@
             <div class="lg:col-span-2">
 
                 <a href="/" class="inline-flex items-center gap-3">
-                    <img
+                    {{-- <img
                         src="{{ asset('images/logo-white.svg') }}"
                         class="h-10"
                         alt="CodeContent"
-                    >
+                    > --}}
 
                     <span class="text-xl font-semibold">
                         CodeContent

@@ -19,9 +19,12 @@ Route::prefix('services')->group(function () {
     Route::get('/', [PagesController::class, 'services'])->name('services');
     Route::get('/technical-content-creation', [PagesController::class, 'technicalContentCreation'])->name('technical-content-creation');
     Route::get('/documentation-engineering', [PagesController::class, 'documentationEngineering'])->name('documentation-engineering');
+    Route::get('/digital-learning', [PagesController::class, 'digitalLearning'])->name('digital-learning');
+    Route::get('/software-engineering', [PagesController::class, 'softwareEngineering'])->name('software-engineering');
 });
 
 Route::get('/about', [PagesController::class, 'about'])->name('about');
+Route::get('/featured-post', [PagesController::class, 'featuredPost'])->name('featured-post');
 
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{post:slug}', [BlogController::class, 'show'])->name('blog.show');

@@ -1,5 +1,5 @@
 <div>
-    <section id="contact" class="section-pad">
+    <section id="contact" class="pb-8">
         <div class="site-shell">
             <div class="card overflow-hidden">
                 <div class="grid gap-0 lg:grid-cols-[1.1fr_0.9fr] lg:items-stretch">

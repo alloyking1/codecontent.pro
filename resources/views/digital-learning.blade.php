@@ -7,14 +7,13 @@
 
 <x-custom.hero-two 
     yellowDot="true" 
-    yellowDotText="Developer Education"
-    title="Content Production for Developer Tools & Platforms"
-    description=" At CodeContent, we build technical content growth engines driving results. Based on SEO and AEO research, tailored to your needs and designed to reach developers at every stage of their journey.
-    We help companies create educational experiences that reduce friction, improve onboarding, and help developers get value from products faster."
+    yellowDotText="Edu Tech"
+    title="Educational Content for Digital Learning Platforms"
+    description=" Educational technology services for E-learning platforms, online courses, and digital learning experiences. We help companies create educational experiences that reduce friction, improve onboarding, and help learners get value from products faster."
     btnOneLink="https://calendly.com/moses-codecontent/30min"
     btnOneText="Book a Discovery Call"
     btnTwoLink="#services"
-    btnTwoText="Explore Developer Education"
+    btnTwoText="Explore Education Technology"
     image="{{ asset('Questions-pana.png') }}"
 >
 </x-custom.hero-two>
