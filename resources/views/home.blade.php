@@ -37,7 +37,7 @@
 
     <x-custom.service-list
         title="Digital Learning and Education Systems"
-        :leanMoreLink="route('technical-content-creation')"
+        :leanMoreLink="route('digital-learning')"
         yellowDotText="Edutech"
         image="{{ asset('Education-bro.png') }}"
         description="Educational technology Educational technology (EdTech) is the combined use of hardware, software, and learning theories to improve teaching and student performance. We help teams create educational experiences that reduce friction, improve onboarding, and help students get value from e-learning faster."
@@ -51,7 +51,7 @@
 
     <x-custom.service-list
         title="Coding and Engineering Services"
-        :leanMoreLink="route('technical-content-creation')"
+        :leanMoreLink="route('software-engineering')"
         yellowDotText="Software engineering"
         image="{{ asset('Hand-coding-amico-copy.png') }}"
         description="Instead of selling isolated deliverables, we build connected education experiences that help developers understand your product faster and succeed with it."

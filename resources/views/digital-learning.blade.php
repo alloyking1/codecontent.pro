@@ -8,7 +8,7 @@
 <x-custom.hero-two 
     yellowDot="true" 
     yellowDotText="Edu Tech"
-    title="Educational Content for Digital Learning Platforms"
+    title="Edu-Tech Services for Digital Learning Platforms"
     description=" Educational technology services for E-learning platforms, online courses, and digital learning experiences. We help companies create educational experiences that reduce friction, improve onboarding, and help learners get value from products faster."
     btnOneLink="https://calendly.com/moses-codecontent/30min"
     btnOneText="Book a Discovery Call"
