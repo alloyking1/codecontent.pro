@@ -41,9 +41,10 @@
                 </h3>
 
                 <ul class="space-y-3 text-zinc-400">
-                    <li><a href="#">Developer Content</a></li>
-                    <li><a href="#">Developer Documentation</a></li>
-                    <li><a href="#">Engineering Services</a></li>
+                    <li><a href="{{ route('technical-content-creation') }}">Developer Content</a></li>
+                    <li><a href="{{ route('documentation-engineering') }}">Developer Documentation</a></li>
+                    <li><a href="{{ route('software-engineering') }}">Engineering Services</a></li>
+                    <li><a href="{{ route('digital-learning') }}">Edu-Tech Services</a></li>
                 </ul>
 
             </div>
@@ -55,11 +56,11 @@
                 </h3>
 
                 <ul class="space-y-3 text-zinc-400">
-                    <li><a href="#">About</a></li>
+                    <li><a href="{{ route('about') }}">About</a></li>
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Articles</a></li>
                     <li><a href="#">Guides</a></li>
-                    <li><a href="#">Contact</a></li>
+                    {{-- <li><a href="#">Contact</a></li> --}}
                 </ul>
 
             </div>
@@ -91,12 +92,12 @@
             </p>
 
             <div class="flex gap-6">
-                <a href="#" class="rounded-full bg-black text-white/80 p-2 transition hover:bg-black/90 hover:text-white">
+                <a href="https://www.linkedin.com/company/108598000/admin/dashboard/" target="_blank" class="rounded-full bg-black text-white/80 p-2 transition hover:bg-black/90 hover:text-white">
                     <svg class="w-8 h-8" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.b{fill:#ffffff;}.c{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;}</style></defs><circle class="b" cx="15.64" cy="13.46" r=".75"></circle><line class="c" x1="15.64" x2="15.64" y1="16.93" y2="31.91"></line><path class="c" d="m33.11 31.91v-9.61a5.83 5.83 0 0 0-5.82-5.82 5.83 5.83 0 0 0-5.83 5.82v9.61"></path><line class="c" x1="21.46" x2="21.46" y1="22.3" y2="16.93"></line><path class="c" d="m40.5 5.5h-33a2 2 0 0 0-2 2v33a2 2 0 0 0 2 2h33a2 2 0 0 0 2-2v-33a2 2 0 0 0-2-2z"></path></g></svg>
                 </a>
-                <a href="#" class="rounded-full bg-black text-white/80 p-2 transition hover:bg-black/90 hover:text-white">
+                {{-- <a href="#" class="rounded-full bg-black text-white/80 p-2 transition hover:bg-black/90 hover:text-white">
                     <svg class="w-8 h-8" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.b{fill:#ffffff;}.c{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;}</style></defs><circle class="b" cx="15.64" cy="13.46" r=".75"></circle><line class="c" x1="15.64" x2="15.64" y1="16.93" y2="31.91"></line><path class="c" d="m33.11 31.91v-9.61a5.83 5.83 0 0 0-5.82-5.82 5.83 5.83 0 0 0-5.83 5.82v9.61"></path><line class="c" x1="21.46" x2="21.46" y1="22.3" y2="16.93"></line><path class="c" d="m40.5 5.5h-33a2 2 0 0 0-2 2v33a2 2 0 0 0 2 2h33a2 2 0 0 0 2-2v-33a2 2 0 0 0-2-2z"></path></g></svg>
-                </a>
+                </a> --}}
             </div>
 
         </div>

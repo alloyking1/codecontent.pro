@@ -21,6 +21,7 @@
                         <li>✓ Engineering Teams</li>
                     </ul>
                 </div>
+                
                 <div class="border-r md:border-gray-300 pr-4">
                     <ul class="space-y-4 text-lg text-gray-600">
                         <li>✓ Developer Relations Teams</li>
@@ -29,12 +30,13 @@
                         <li>✓ Technical Training Organisations</li>
                     </ul>
                 </div>
-                <div class="">
+                
+                <div>
                     <ul class="space-y-4 text-lg text-gray-600">
-                        <li>✓ Developer Relations Teams</li>
-                        <li>✓ Learning & Development Teams</li>
-                        <li>✓ Product Enablement Teams</li>
-                        <li>✓ Technical Training Organisations</li>
+                        <li>✓ API-First Companies</li>
+                        <li>✓ Open Source Projects</li>
+                        <li>✓ Enterprise Software Companies</li>
+                        <li>✓ Technology Startups</li>
                     </ul>
                 </div>
     
