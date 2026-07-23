@@ -49,11 +49,13 @@
                     
                     <div class="pl-6">
                         <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                            {{-- <div class="md:flex md:gap-2 grid grid-cols-1 mt-8 gap-8"> --}}
                             <x-custom.btn-one
                                 link="{{ $btnOneLink }}"
                                 text="{{ $btnOneText }}"
                             />
                             <x-custom.btn-two
+                                class=""
                                 link="{{ $btnTwoLink }}"
                                 text="{{ $btnTwoText }}"
                                 type="primary"

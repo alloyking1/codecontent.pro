@@ -17,11 +17,13 @@
 <div>
     <a href="{{ $link }}" 
         {{ $attributes->merge([
-            'class' => " py-3 rounded-xl font-medium transition {$typeClasses}"
+            'class' => " rounded-xl font-medium transition {$typeClasses}"
         ]) }}>
-        <div class="flex items-center gap-2 justify-center">
+        <div class="flex gap-2 mt-4 md:mt-0">
             {{ $text }}
-            <x-icons.arrow-right class="h-4 w-4 transition group-hover:translate-x-1" />
+            <span>
+                <x-icons.arrow-right class="h-4 w-4 transition group-hover:translate-x-1" />
+            </span>
         </div>
     </a>
 </div>

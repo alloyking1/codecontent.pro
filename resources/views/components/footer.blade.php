@@ -28,8 +28,8 @@
                     technical content, documentation and engineering.
                 </p>
 
-                <a href="#" class="button-primary mt-8">
-                    Let's Talk
+                <a href="{{ route('authors.index') }}" class="button-primary mt-8">
+                    <span>Become an Author</span>
                 </a>
 
             </div>

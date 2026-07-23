@@ -20,17 +20,20 @@
                     and engineering teams improve developer onboarding, documentation,
                     technical content, and educational resources.
                 </p>
-    
-                <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+
+                <div class="md:flex md:gap-2 grid grid-cols-1 mt-8 gap-8 justify-center">
+
                     <x-custom.btn-one
                         :link="route('technical-content-creation')"
                         text="Explore Technical Writing"
                     />
-                    <x-custom.btn-one
+                    <x-custom.btn-two
+                        class="mt-4 md:mt-0"
                         :link="route('documentation-engineering')"
                         text="Explore Developer Education"
-                        type="secondary"
+                        type="primary"
                     />
+
                 </div>
             </div>
             
