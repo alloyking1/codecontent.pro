@@ -172,6 +172,12 @@
                                 <a href="{{ route('documentation-engineering') }}" class="block py-2">
                                     Documentation Engineering
                                 </a>
+                                <a href="{{ route('digital-learning') }}" class="block py-2">
+                                    Educational Technology Services
+                                </a>
+                                <a href="{{ route('software-engineering') }}" class="block py-2">
+                                    Software Engineering Services
+                                </a>
                             </div>
                         
                         </div>
