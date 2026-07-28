@@ -6,43 +6,49 @@
     'leanMoreLink' => '#',
 ])
 
-<section class="py-8 pb-20">
-    <div class="site-shell grid md:grid-cols-2 gap-12">
-
-        <div class="md:pr-8 order-2 md:order-0">
-            <div class="">
-
-                <x-custom.yellow-dot>{{ $yellowDotText }}</x-custom.yellow-dot>
+<div>
+    <section class="py-8 pb-20">
+        <div class="site-shell grid md:grid-cols-2 gap-8">
+        {{-- <div class="site-shell grid gap-12"> --}}
     
-                <h2 class="mt-4 text-4xl font-semibold-[0.2] tracking-tight text-[#0A0A0A] sm:text-6xl">
-                    {{ $title }}
-                </h2>
+            <div class="md:pr-8 order-2 md:order-0">
+                <div class="">
     
-                <p class="my-12 text-base leading-7 text-[#525252] sm:text-lg">
-                   {{ $description }}
-                </p>
-            </div>
-
-            <div class="mr-4">
-                
-                <div class="pb-10">
-                    <a class="button-secondary px-8" href="{{ $leanMoreLink }}">Learn More</a>
+                    <x-custom.yellow-dot>{{ $yellowDotText }}</x-custom.yellow-dot>
+        
+                    <h2 class="mt-4 text-4xl font-semibold-[0.2] tracking-tight text-[#0A0A0A] sm:text-6xl">
+                        {{ $title }}
+                    </h2>
+        
+                    <p class="my-12 text-base leading-7 text-[#525252] sm:text-lg">
+                       {{ $description }}
+                    </p>
                 </div>
+    
+                <div class="mr-4">
+                    
+                    <div class="pb-10">
+                        <a class="button-secondary px-8" href="{{ $leanMoreLink }}">Learn More</a>
+                    </div>
+    
+                    {{ $slot }}
+                </div>
+            </div>
+    
+            <div class="md:flex justify-end rounded-2xl p-4">
+                <div class="">
 
-                {{ $slot }}
+                    <img
+                        src="{{ $image }}"
+                        alt="Illustration of a developer learning about a product"
+                        class="w-[30rem] h-auto"
+                    >
+                    {{-- <a href="https://storyset.com/design">Design illustrations by Storyset</a> --}}
+                </div>
             </div>
         </div>
-
-        <div>
-            <img
-                src="{{ $image }}"
-                alt="Illustration of a developer learning about a product"
-                class="w-full h-auto"
-            >
-            {{-- <a href="https://storyset.com/design">Design illustrations by Storyset</a> --}}
-        </div>
-    </div>
-</section>
+    </section>
+</div>
 
 
 

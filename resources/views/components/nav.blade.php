@@ -11,7 +11,8 @@
             </a>
 
             <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
-                <a class="nav-link" href="{{ route('home') }}">Home</a>
+                {{-- <a class="nav-link" href="{{ route('home') }}">Home</a> --}}
+               
             
                 <!-- Services Dropdown -->
                 <div class="relative group py-2">
@@ -65,7 +66,7 @@
                 <a class="nav-link" href="{{ route('about') }}">About</a>
                 {{-- <a class="nav-link" href="{{ route('about') }}">Featured Posts</a> --}}
                 {{-- <a class="nav-link" href="{{ route('blog.index') }}">Blog</a> --}}
-
+                
                 <div class="relative group py-2">
                     <button
                         type="button"

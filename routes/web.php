@@ -24,7 +24,7 @@ Route::prefix('services')->group(function () {
 });
 
 Route::get('/about', [PagesController::class, 'about'])->name('about');
-Route::get('/featured-post', [PagesController::class, 'featuredPost'])->name('featured-post');
+Route::get('/featured-publications', [PagesController::class, 'featuredPost'])->name('featured-publications');
 
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{post:slug}', [BlogController::class, 'show'])->name('blog.show');
