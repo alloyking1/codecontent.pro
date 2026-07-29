@@ -118,21 +118,26 @@ class PagesController extends Controller
     {
         $services = [
             [
-                'title' => 'AI Automation and AI Integration',
-                'description' => 'Automate complex tasks and processes with AI-powered solutions. We help you integrate AI capabilities into your software to enhance efficiency, accuracy, and customer experience.',
+                'title' => 'Purpose-Built Admin Tools That Match Your Business Logic',
+                'description' => 'We engineer secure, fast, and intuitive web applications and internal portals tailored to your operational workflows—giving support, operations, and leadership teams complete operational visibility.',
+                'techstack_keywords' => 'React, Node.js, Laravel, PostgreSQL, MongoDB, Custom Admin Dashboards, Role-Based Access Control (RBAC).'
             ],
             [
-                'title' => 'Custom Software Development',
-                'description' => 'Build scalable, high-performance software solutions tailored to your business needs. We specialize in creating custom applications that integrate seamlessly with your existing systems and workflows.',
+                'title' => 'Custom AI Workflows to Automate Complex Operations',
+                'description' => 'Beyond basic chatbots, we build production AI pipelines—integrating LLMs, vector databases, and automated document processing tools directly into your backend architecture.',
+                'techstack_keywords' => 'OpenAI API, Vector Databases (MongoDB Atlas Vector Search), LLM Chains, Automated Document Extraction, Intelligent Data Routing.'
             ],
             [
-                'title' => 'Software Architecture Design',
-                'description' => 'Design robust and maintainable software architectures that support your business goals and technical requirements. We help you create scalable solutions that can evolve with your organization.',
+                'title' => 'Robust API Architecture & Database Integrations',
+                'description' => 'Connect legacy databases, third-party SaaS platforms, and internal microservices into a seamless, high-performance API network built for high availability and low latency.',
+                'techstack_keywords' => 'RESTful APIs, Webhooks, Data Pipeline Automation, Microservices, Middleware Development.'
             ],
-            [
-                'title' => 'DevOps Implementation',
-                'description' => 'Implement efficient DevOps practices to streamline your development and deployment processes. We help you achieve faster release cycles, improved collaboration, and enhanced system reliability.',
-            ],
+            // [
+            //     'title' => 'Custom AI Workflows to Automate Complex Operations',
+            //     'description' => 'Beyond basic chatbots, we build production AI pipelines—integrating LLMs, vector databases, and automated document processing tools directly into your backend architecture.',
+            //     'techstack_keywords' => 'OpenAI API, Vector Databases (MongoDB Atlas Vector Search), LLM Chains, Automated Document Extraction, Intelligent Data Routing.'
+            // ],
+            
         ];
         return view('software-engineering', ['services' => $services]);
     }

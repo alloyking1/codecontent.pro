@@ -4,14 +4,14 @@
     'description' => '',
 ])
 
-<br/>
+{{-- <br/> --}}
 <section id="services" class="section-pad">
 
-    <div class="mx-auto px-4 max-w-7xl">
+    <div class="mx-auto px-4 md:px-0 max-w-6xl">
 
         <div class="max-w-6xl mx-auto">
             <x-custom.yellow-dot class="">{{ $yellowDotText }}</x-custom.yellow-dot>
-            <h2 class="text-6xl font-semibold tracking-tight text-[#0A0A0A]">
+            <h2 class="text-4xl font-semibold tracking-tight text-[#0A0A0A]">
                 {{ $title }}
             </h2>
 

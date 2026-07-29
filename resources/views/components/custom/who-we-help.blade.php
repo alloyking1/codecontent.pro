@@ -1,5 +1,5 @@
 @props([
-    'yellowDotText' => 'Services',
+    'yellowDotText' => 'USE CASES',
 ])
 
 <div class="p-4">
@@ -7,7 +7,7 @@
 
         <div class="container mx-auto px-4 max-w-6xl">
             <x-custom.yellow-dot class="">{{ $yellowDotText }}</x-custom.yellow-dot>
-            <h2 class="text-6xl font-bold mb-12">
+            <h2 class="text-4xl font-bold mb-12">
                 Who We Help
             </h2>
     

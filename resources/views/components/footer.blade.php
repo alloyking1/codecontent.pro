@@ -1,7 +1,7 @@
 
 
 <div class="">
-    <x-email-list />
+    {{-- <x-email-list /> --}}
 </div>
 <footer class="relative overflow-hidden bg-[#0A0A0A] text-white">
 
