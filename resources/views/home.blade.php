@@ -32,7 +32,7 @@
             </x-custom.service-list>
 
                 <x-custom.service-list
-                {{-- title="Technical Writing & Developer Media" --}}
+                title="Technical Writing & Developer Media"
                 :leanMoreLink="route('technical-content-creation')"
                 yellowDotText="DOCUMENT & ENGAGE"
                 image="{{ asset('Pen-tool-amico.png') }}"

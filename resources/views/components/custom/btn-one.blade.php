@@ -18,7 +18,7 @@
     <a href="{{ $link }}" 
         {{ $attributes->merge([
             // 'class' => "px-6 py-3 rounded-xl font-medium transition {$typeClasses}"
-            'class' => "px-6 py-6  font-medium transition {$typeClasses}"
+            'class' => "block px-6 py-6 w-full font-medium transition {$typeClasses}"
         ]) }}>
         {{ $text }}
     </a>
