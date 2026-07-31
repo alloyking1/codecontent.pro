@@ -46,7 +46,7 @@
                 {{-- </div> --}}
                 </div>
 
-                @if ($showButton)
+                @if ($showButton === true)
                     
                     <div class="md:pl-6 pl-2">
                         <div class="mt-8 flex flex-col sm:flex-row gap-4">

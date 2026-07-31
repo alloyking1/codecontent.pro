@@ -141,4 +141,17 @@ class PagesController extends Controller
         ];
         return view('software-engineering', ['services' => $services]);
     }
+
+    public function caseStudy()
+    {
+        return view('case-study');
+    }
+
+    public function faqAndPricing(){
+        return view('faq-and-pricing');
+    }
+
+    public function contact(){
+        return view('contact');
+    }
 }

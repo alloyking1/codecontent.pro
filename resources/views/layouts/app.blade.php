@@ -50,6 +50,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Newsreader:opsz,wght@6..72,200..800&display=swap" rel="stylesheet">
+        {{-- <link href="https://cdn.jsdelivr.net/fontsource/fonts/peace-sans@5.3.0/latin-400-normal.woff2"> --}}
+
 
         <meta name="theme-color" content="#FFFFFF">
 

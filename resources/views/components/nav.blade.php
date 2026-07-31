@@ -3,7 +3,7 @@
     <div class="site-shell">
         <div class="relative flex items-center justify-between py-4" x-data="{ mobileMenuOpen: false }">
             <a href="{{ route('home') }}" class="flex items-center gap-3">
-                <span class="flex h-10 w-10 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8] text-sm font-bold text-[#0A0A0A]">CC</span>
+                <span class="flex h-10 w-10 items-center justify-center rounded-full border border-[#E5E5E5] bg-[#F8F8F8] text-sm font-bold font-['Peace_Sans'] text-[#0A0A0A]">CC</span>
                 <span class="flex flex-col leading-none">
                     <span class="text-sm font-semibold tracking-tight text-[#0A0A0A]">CodeContent.pro</span>
                     <span class="text-xs text-[#525252]">Developer education partner</span>
@@ -62,8 +62,10 @@
                     </div>
                 </div>
             
-                {{-- <a class="nav-link" href="#contact">Contact</a> --}}
+                <a class="nav-link" href="{{ route('case-studies') }}">Case Studies</a>
+                <a class="nav-link" href="{{ route('faq-and-pricing') }}">Pricing & FAQ</a>
                 <a class="nav-link" href="{{ route('about') }}">About</a>
+                <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                 {{-- <a class="nav-link" href="{{ route('about') }}">Featured Posts</a> --}}
                 {{-- <a class="nav-link" href="{{ route('blog.index') }}">Blog</a> --}}
                 

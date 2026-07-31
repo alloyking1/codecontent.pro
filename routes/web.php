@@ -26,6 +26,14 @@ Route::prefix('services')->group(function () {
 Route::get('/about', [PagesController::class, 'about'])->name('about');
 Route::get('/featured-publications', [PagesController::class, 'featuredPost'])->name('featured-publications');
 
+// new pages
+Route::get('/case-studies', [PagesController::class, 'caseStudy'])->name('case-studies');
+Route::get('/faq-and-pricing', [PagesController::class, 'faqAndPricing'])->name('faq-and-pricing');
+Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
+
+
+// end new pages
+
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{post:slug}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('/authors', [AuthorController::class, 'index'])->name('authors.index');
