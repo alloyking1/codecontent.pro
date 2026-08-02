@@ -18,8 +18,8 @@
     ],
 ])
 
-{{-- <div class="m-4 rounded-4xl bg-[#f4f5f6] p-4"> --}}
 <div class="m-4 rounded-4xl bg-[#f4f5f6] p-4">
+{{-- <div class="m-4 rounded-4xl bg-gradient-to-br from-amber-200 via-yellow-1000 to-amber-100 p-4"> --}}
     <div class="order-2 md:order-0 md:pr-8">
         <div class="mx-auto max-w-6xl">
 

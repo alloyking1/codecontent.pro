@@ -19,7 +19,7 @@
 <div class="site-shell">
     <div class="my-10 border-y border-gray-200">
         <div class="flex gap-4 p-8">
-            <div class="flex items-center gap-2">
+            <div class="flex items-center space-x-2">
             @foreach ($badges as $badge )
                     {{-- <img src="{{ $badge['logo'] }}" alt="{{ $badge['name'] }}"> --}}
                     ✓ {{ $badge['name'] }}

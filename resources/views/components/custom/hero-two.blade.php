@@ -68,6 +68,7 @@
                 @endif
         </div>
 
+        {{ $slot }}
         
     </section>
 </div>

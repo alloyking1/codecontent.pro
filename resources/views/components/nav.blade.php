@@ -11,7 +11,6 @@
             </a>
 
             <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
-                {{-- <a class="nav-link" href="{{ route('home') }}">Home</a> --}}
                
             
                 <!-- Services Dropdown -->
@@ -39,25 +38,19 @@
                             href="{{ route('technical-content-creation') }}"
                             class="block rounded-lg px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100"
                         >
-                            Technical Content Creation
-                        </a>
-            
-                        <a
-                            href="{{ route('documentation-engineering') }}"
-                            class="block rounded-lg px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100"
-                        >
-                        Documentation Engineering
+                            Technical writing & Dev Media
                         </a>
                         <a
                             href="{{ route('digital-learning') }}"
                             class="block rounded-lg px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100"
                         >
-                        Educational Technology Services                        </a>
+                        EdTech & Course Development 
+                        </a>
                         <a
                             href="{{ route('software-engineering') }}"
                             class="block rounded-lg px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100"
                         >
-                        Software Engineering Services
+                        Coding & Engineering Services
                         </a>
                     </div>
                 </div>
@@ -66,7 +59,6 @@
                 <a class="nav-link" href="{{ route('faq-and-pricing') }}">Pricing & FAQ</a>
                 <a class="nav-link" href="{{ route('about') }}">About</a>
                 <a class="nav-link" href="{{ route('contact') }}">Contact</a>
-                {{-- <a class="nav-link" href="{{ route('about') }}">Featured Posts</a> --}}
                 {{-- <a class="nav-link" href="{{ route('blog.index') }}">Blog</a> --}}
                 
                 <div class="relative group py-2">

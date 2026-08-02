@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Enums\DigitalLearningServiceEnum;
 
 class PagesController extends Controller
 {
@@ -93,25 +94,7 @@ class PagesController extends Controller
 
     public function digitalLearning()
     {
-        $services = [
-            [
-                'title' => 'Instructional Design for Developers',
-                'description' => 'Create engaging, interactive learning experiences with technical learning platforms that provide tutorials, courses, and hands-on labs. We create developer education solutions that accelerate onboarding, improve retention, and drive adoption.',
-            ],
-            [
-                'title' => 'Curriculum Development',
-                'description' => 'Curriculum development for technical learning platforms, online courses, and developer education programs. We design structured learning paths that help developers acquire skills, build confidence, and achieve their goals.',
-            ],
-            [
-                'title' => 'LMS Administration',
-                'description' => 'Manage and optimize your learning management system to ensure seamless delivery of educational content. We provide comprehensive LMS administration services to support your developer education initiatives.',
-            ],
-            [
-                'title' => 'Learning Design and Technology',
-                'description' => 'Leverage the latest learning technologies to create immersive, interactive educational experiences. We help you implement learning design best practices that enhance engagement, knowledge retention, and developer success.',
-            ],
-        ];
-        return view('digital-learning', ['services' => $services]);
+        return view('digital-learning', ['services' => DigitalLearningServiceEnum::all()]);
     }
 
     public function softwareEngineering()
@@ -155,3 +138,4 @@ class PagesController extends Controller
         return view('contact');
     }
 }
+
