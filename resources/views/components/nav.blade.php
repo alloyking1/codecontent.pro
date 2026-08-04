@@ -47,7 +47,7 @@
                     </div>
                 </div>
             
-                <a class="nav-link" href="{{ route('case-studies') }}">Case Studies</a>
+                {{-- <a class="nav-link" href="{{ route('case-studies') }}">Case Studies</a> --}}
                 <a class="nav-link" href="{{ route('faq-and-pricing') }}">Pricing & FAQ</a>
                 <a class="nav-link" href="{{ route('about') }}">About</a>
                 <a class="nav-link" href="{{ route('contact') }}">Contact</a>
@@ -151,9 +151,9 @@
                                     Technical Content Creation
                                 </a>
                         
-                                <a href="{{ route('documentation-engineering') }}" class="block py-2">
+                                {{-- <a href="{{ route('documentation-engineering') }}" class="block py-2">
                                     Documentation Engineering
-                                </a>
+                                </a> --}}
                                 <a href="{{ route('digital-learning') }}" class="block py-2">
                                     Educational Technology Services
                                 </a>
@@ -164,7 +164,11 @@
                         
                         </div>
 
-                        <a class="nav-link" href="{{ route('about') }}" @click="mobileMenuOpen = false">About</a>
+                        <a class="nav-link" href="{{ route('faq-and-pricing') }}">Pricing & FAQ</a>
+                        <a class="nav-link" href="{{ route('about') }}">About</a>
+                        <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+
+                        {{-- <a class="nav-link" href="{{ route('about') }}" @click="mobileMenuOpen = false">About</a> --}}
                         <a class="nav-link" href="{{ route('blog.index') }}" @click="mobileMenuOpen = false">Blog</a>
                         <a class="button-primary w-full sm:w-fit" target="_blank" href="https://calendly.com/moses-codecontent/30min" @click="mobileMenuOpen = false">
                             <span>Book a call</span>
