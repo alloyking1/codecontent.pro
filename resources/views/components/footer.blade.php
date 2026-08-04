@@ -42,7 +42,7 @@
 
                 <ul class="space-y-3 text-zinc-400">
                     <li><a href="{{ route('technical-content-creation') }}">Developer Content</a></li>
-                    <li><a href="{{ route('documentation-engineering') }}">Developer Documentation</a></li>
+                    {{-- <li><a href="{{ route('documentation-engineering') }}">Developer Documentation</a></li> --}}
                     <li><a href="{{ route('software-engineering') }}">Engineering Services</a></li>
                     <li><a href="{{ route('digital-learning') }}">Edu-Tech Services</a></li>
                 </ul>
@@ -57,9 +57,8 @@
 
                 <ul class="space-y-3 text-zinc-400">
                     <li><a href="{{ route('about') }}">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">Guides</a></li>
+                    <li><a href="{{ route('case-studies') }}">Work</a></li>
+                    <li><a href="{{ route('faq-and-pricing') }}">Pricing</a></li>
                     {{-- <li><a href="#">Contact</a></li> --}}
                 </ul>
 

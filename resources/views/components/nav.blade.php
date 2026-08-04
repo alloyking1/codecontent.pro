@@ -96,13 +96,13 @@
                             Community
                             <span class="bg-gray-500 text-white text-[12px]  rounded-full p-1">Coming soon</span>
                             </a>
-                            <a
+                            {{-- <a
                                 href="#"
                                 class="block rounded-lg px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100"
                             >
                             Learning
                             <span class="bg-gray-500 text-white text-[12px]  rounded-full p-1">Coming soon</span>
-                            </a>
+                            </a> --}}
                         </di>
                     </div>
                 </div>

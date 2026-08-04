@@ -42,7 +42,7 @@
 
                 <x-custom.service-list
                     title="EdTech & Course Development"
-                    :leanMoreLink="route('documentation-engineering')"
+                    :leanMoreLink="route('digital-learning')"
                     yellowDotText="EDUCATE & SCALE"
                     {{-- image="{{ asset('Creative-team-cuate.png') }}" --}}
                     image="{{ asset('Education-bro.png') }}"
