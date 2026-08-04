@@ -13,11 +13,11 @@
             'title' => 'Research',
             'description' => 'Explore the product, technology, and market.',
         ],
-        // [
-        //     'number' => '03',
-        //     'title' => 'Create',
-        //     'description' => 'Turn technical knowledge into useful content.',
-        // ],
+        [
+            'number' => '03',
+            'title' => 'Create',
+            'description' => 'Turn technical knowledge into useful content.',
+        ],
         // [
         //     'number' => '04',
         //     'title' => 'Optimize',
@@ -49,11 +49,11 @@
 
         </div>
 
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+        <div class="">
             {{ $slot }}
-            <div class="mx-auto">
+            <div class="">
 
-                <div class="grid md:grid-cols-3">
+                <div class="grid md:grid-cols-3 w-full">
         
                     @foreach ($steps as $step)
         

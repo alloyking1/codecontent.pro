@@ -19,16 +19,8 @@
                         type="button"
                         class="nav-link inline-flex items-center gap-1"
                     >
-                        Services
-            
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="h-4 w-4 transition-transform duration-200 group-hover:rotate-180"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
-                        </svg>
+                        <span>Services</span>
+                        <x-icons.chevron-right class="transition-transform duration-200 group-hover:rotate-90" />
                     </button>
             
                     <div
@@ -66,16 +58,8 @@
                         type="button"
                         class="nav-link inline-flex items-center gap-1"
                     >
-                        Insights
-            
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="h-4 w-4 transition-transform duration-200 group-hover:rotate-180"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
-                        </svg>
+                        <span>Insights</span>
+                        <x-icons.chevron-right class="transition-transform duration-200 group-hover:rotate-90" />
                     </button>
             
                     <div
@@ -107,7 +91,10 @@
                     </div>
                 </div>
 
-                <a class="button-primary" target="_blank" href="https://calendly.com/moses-codecontent/30min">Book a call</a>
+                <a class="button-primary" target="_blank" href="https://calendly.com/moses-codecontent/30min">
+                    <span>Book a call</span>
+                    <x-icons.arrow-up-right class="ml-2" />
+                </a>
             </nav>
 
             
@@ -179,7 +166,10 @@
 
                         <a class="nav-link" href="{{ route('about') }}" @click="mobileMenuOpen = false">About</a>
                         <a class="nav-link" href="{{ route('blog.index') }}" @click="mobileMenuOpen = false">Blog</a>
-                        <a class="button-primary w-full sm:w-fit" target="_blank" href="https://calendly.com/moses-codecontent/30min" @click="mobileMenuOpen = false">Book a call</a>
+                        <a class="button-primary w-full sm:w-fit" target="_blank" href="https://calendly.com/moses-codecontent/30min" @click="mobileMenuOpen = false">
+                            <span>Book a call</span>
+                            <x-icons.arrow-up-right class="ml-2" />
+                        </a>
                     </div>
                 </div>
             </div>

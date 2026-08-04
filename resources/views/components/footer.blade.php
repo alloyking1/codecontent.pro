@@ -30,6 +30,7 @@
 
                 <a href="{{ route('authors.index') }}" class="button-primary mt-8">
                     <span>Become an Author</span>
+                    <x-icons.arrow-up-right class="ml-2" />
                 </a>
 
             </div>
@@ -41,10 +42,9 @@
                 </h3>
 
                 <ul class="space-y-3 text-zinc-400">
-                    <li><a href="{{ route('technical-content-creation') }}">Developer Content</a></li>
-                    {{-- <li><a href="{{ route('documentation-engineering') }}">Developer Documentation</a></li> --}}
-                    <li><a href="{{ route('software-engineering') }}">Engineering Services</a></li>
-                    <li><a href="{{ route('digital-learning') }}">Edu-Tech Services</a></li>
+                    <li><a class="inline-flex items-center gap-2 transition hover:text-white" href="{{ route('technical-content-creation') }}"><x-icons.chevron-right class="h-3.5 w-3.5" />Developer Content</a></li>
+                    <li><a class="inline-flex items-center gap-2 transition hover:text-white" href="{{ route('software-engineering') }}"><x-icons.chevron-right class="h-3.5 w-3.5" />Engineering Services</a></li>
+                    <li><a class="inline-flex items-center gap-2 transition hover:text-white" href="{{ route('digital-learning') }}"><x-icons.chevron-right class="h-3.5 w-3.5" />Edu-Tech Services</a></li>
                 </ul>
 
             </div>
@@ -56,10 +56,9 @@
                 </h3>
 
                 <ul class="space-y-3 text-zinc-400">
-                    <li><a href="{{ route('about') }}">About</a></li>
-                    <li><a href="{{ route('case-studies') }}">Work</a></li>
-                    <li><a href="{{ route('faq-and-pricing') }}">Pricing</a></li>
-                    {{-- <li><a href="#">Contact</a></li> --}}
+                    <li><a class="inline-flex items-center gap-2 transition hover:text-white" href="{{ route('about') }}"><x-icons.chevron-right class="h-3.5 w-3.5" />About</a></li>
+                    <li><a class="inline-flex items-center gap-2 transition hover:text-white" href="{{ route('case-studies') }}"><x-icons.chevron-right class="h-3.5 w-3.5" />Work</a></li>
+                    <li><a class="inline-flex items-center gap-2 transition hover:text-white" href="{{ route('faq-and-pricing') }}"><x-icons.chevron-right class="h-3.5 w-3.5" />Pricing</a></li>
                 </ul>
 
             </div>

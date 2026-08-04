@@ -2,7 +2,7 @@
     'yellowDot' => false,
 ])
 
-<div class="m-4 rounded-4xl bg-gradient-to-br from-amber-200 via-yellow-1000 to-amber-100 p-4">
+<div class="m-2 rounded-4xl bg-gradient-to-br from-amber-200 via-yellow-1000 to-amber-100 md:p-4 p-2">
 {{-- <div class="md:m-4 rounded-4xl md:p-4"> --}}
     <div class="section-pad pt-20 sm:pt-24 lg:pt-28 rounded-3xl">
         <div class="site-shell">

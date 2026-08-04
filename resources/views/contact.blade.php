@@ -38,12 +38,12 @@
     
                     <div class="flex items-start justify-between">
     
-                        <div class="flex h-12 w-12 items-center justify-center rounded-2xl text-black bg-white border border-[#E5E5E5] text-xl">
-                            →
+                        <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white border border-[#E5E5E5] text-black">
+                            <x-icons.arrow-up-right class="h-5 w-5" />
                         </div>
     
                         <span class="text-sm text-[#525252] transition group-hover:translate-x-1">
-                            ↓
+                            <x-icons.chevron-right class="h-4 w-4" />
                         </span>
     
                     </div>
@@ -70,12 +70,12 @@
     
                     <div class="flex items-start justify-between">
     
-                        <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-black text-xl text-white">
-                            ↗
+                        <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-black text-white">
+                            <x-icons.arrow-up-right class="h-5 w-5" />
                         </div>
     
                         <span class="text-sm text-black transition group-hover:translate-x-1">
-                            →
+                            <x-icons.chevron-right class="h-4 w-4" />
                         </span>
     
                     </div>
@@ -130,9 +130,15 @@
     
     
                 {{-- Form --}}
+                @if (session('success'))
+                    <div class="mb-6 rounded-2xl border border-green-200 bg-green-50 p-4 text-sm text-green-700">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
                 <form
                     method="POST"
-                    action="#"
+                    action="{{ route('contact-us.store') }}"
                     class="space-y-8"
                 >
     
@@ -233,17 +239,17 @@
                                 Technical Content Creation
                             </option>
     
-                            <option value="documentation">
+                            {{-- <option value="documentation">
                                 Documentation
-                            </option>
+                            </option> --}}
     
                             <option value="engineering">
                                 Software Engineering
                             </option>
     
-                            <option value="ai">
+                            {{-- <option value="ai">
                                 AI & Automation
-                            </option>
+                            </option> --}}
     
                             <option value="edtech">
                                 EdTech & Course Development
@@ -277,13 +283,14 @@
     
     
                     {{-- Submit --}}
-                    <div class="pt-2">
+                    <div class="py-2 pb-8">
     
                         <button
                             type="submit"
                             class="inline-flex w-full items-center justify-center bg-black px-8 py-4 text-sm font-semibold text-white transition hover:bg-gray-800 sm:w-auto"
                         >
-                            Send Project Details
+                            <span>Send Project Details</span>
+                            <x-icons.arrow-up-right class="ml-2 h-4 w-4" />
                         </button>
     
                     </div>

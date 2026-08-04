@@ -1,6 +1,14 @@
 @props([
-
-])
+        'testimonies' => [
+            [
+                'text' => "We were blown away by how fast CodeContent turned our idea into a working product. Their ability to hit the ground running and deliver completely exceeded our expectations.",
+                'name' => 'Kingsley Ihemere',
+                'position' => 'CEO',
+                'company' => 'Primlytics',
+            ],
+        ]
+    ])
+    
 
 <div class="site-shell mx-auto">
     <div class="text-center">
@@ -10,39 +18,44 @@
         </h2>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-1 md:mt-16 mt-6">
-        <div class="md:pb-[5rem] pb-[2rem]">
-            <h2 class="italic text-xl">
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. sdlfksdlk sdflsdfk sdkfjsldfsdf
-                sdflksdflks dkslkdfjlskdjfksdf klkjlskdfkldkf sdfksldfksld fkskd ksdflksjdfl sdfkjsldf kjsldkfjslk 
-                sdfksdfskjd fsdksldf skdfjs dfkjsl dfsdf
-                sldkfjsdlkfjsld fskjlskdjflskdjflskdjflksjdfls dksfljksdjflkjdlfksjdf s slkdfjskjdflsjdflskjdkf
-                "
-            </h2>
-            <div class="mt-8 gap-2 md:inline-flex justify-center">
-                <div class="bg-[#FACC15] w-[24px] rounded h-0.5"></div>
-                <div>
-                    <p class="text-sm font-semibold text-[#0A0A0A]">John Doe</p>
-                </div>
-                <p class="text-sm text-muted">CEO, Company</p>
-            </div>
-        </div>
-        <div class="md:pb-[5rem] pb-[2rem]">
-            <h2 class="italic text-xl">
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. sdlfksdlk sdflsdfk sdkfjsldfsdf
-                sdflksdflks dkslkdfjlskdjfksdf klkjlskdfkldkf sdfksldfksld fkskd ksdflksjdfl sdfkjsldf kjsldkfjslk 
-                sdfksdfskjd fsdksldf skdfjs dfkjsl dfsdf
-                sldkfjsdlkfjsld fskjlskdjflskdjflskdjflksjdfls dksfljksdjflkjdlfksjdf s slkdfjskjdflsjdflskjdkf
-                "
-            </h2>
-            <div class="mt-8 gap-2 md:inline-flex justify-center">
-                <div class="bg-[#FACC15] w-[24px] rounded h-0.5"></div>
-                <div>
-                    <p class="text-sm font-semibold text-[#0A0A0A]">John Doe</p>
-                </div>
-                <p class="text-sm text-muted">CEO, Company</p>
-            </div>
-        </div>
+    @if (count($testimonies) > 1)
         
-    </div>
+        <div class="grid md:grid-cols-2 gap-1 md:mt-16 mt-6">
+            @foreach ($testimonies as $each)
+                <div class="md:pb-[5rem] pb-[2rem]">
+                    <h2 class="italic text-xl">
+                        "{{ $each['text'] }}"
+                    </h2>
+                    <div class="mt-8 gap-2 md:inline-flex justify-center">
+                        <div class="bg-[#FACC15] w-[24px] rounded h-0.5"></div>
+                        <div>
+                            <p class="text-sm font-semibold text-[#0A0A0A]">{{ $each['name'] }}</p>
+                        </div>
+                        <p class="text-sm text-muted">{{ $each['position'] }}, {{ $each['company'] }}</p>
+                    </div>
+                </div>
+                
+            @endforeach
+            
+        </div>
+    @else
+        <div class="grid md:grid-cols-1 gap-1 md:mt-16 mt-6">
+            @foreach ($testimonies as $each)
+                <div class="md:pb-[5rem] pb-[2rem]">
+                    <h2 class="italic text-xl">
+                        "{{ $each['text'] }}"
+                    </h2>
+                    <div class="mt-8 gap-2 md:inline-flex justify-center">
+                        <div class="bg-[#FACC15] w-[24px] rounded h-0.5"></div>
+                        <div>
+                            <p class="text-sm font-semibold text-[#0A0A0A]">{{ $each['name'] }}</p>
+                        </div>
+                        <p class="text-sm text-muted">{{ $each['position'] }}, {{ $each['company'] }}</p>
+                    </div>
+                </div>
+                
+            @endforeach
+            
+        </div>
+    @endif
 </div>

@@ -222,9 +222,11 @@ CODE
 
                     {{-- Category --}}
                     <div
-                        class="absolute bottom-4 left-4 bg-[#FACC15] px-3 py-1 text-[9px] font-bold uppercase tracking-wide text-black"
-                        x-text="project.label"
-                    ></div>
+                        class="absolute bottom-4 left-4 inline-flex items-center gap-2 bg-[#FACC15] px-3 py-1 text-[9px] font-bold uppercase tracking-wide text-black"
+                    >
+                        <x-icons.plus-circle class="h-3.5 w-3.5" />
+                        <span x-text="project.label"></span>
+                    </div>
 
                 </div>
 
@@ -267,24 +269,35 @@ CODE
 
 
                 {{-- Outcome --}}
-                <div class="mt-6 flex items-center gap-4 border-t border-[#D9D9D9] pt-5">
+                <div class="mt-6 border-t border-[#D9D9D9] pt-5">
+                    <div class="flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[#D9D9D9] bg-[#F8F8F8] text-[#0A0A0A]">
+                                <x-icons.arrow-up-right class="h-5 w-5" />
+                            </div>
 
-                    <span
-                        class="font-heading text-4xl font-semibold tracking-tight text-[#0A0A0A]"
-                        x-text="project.outcome"
-                    ></span>
+                            <div>
+                                <p class="text-[10px] font-bold uppercase tracking-[0.18em] text-[#A58A00]">
+                                    Outcome
+                                </p>
 
-                    <div>
-                        <p class="text-[10px] font-bold uppercase tracking-[0.18em] text-[#A58A00]">
-                            Outcome
-                        </p>
+                                <p
+                                    class="text-sm text-[#525252]"
+                                    x-text="project.outcomeLabel"
+                                ></p>
+                            </div>
+                        </div>
 
-                        <p
-                            class="text-sm text-[#525252]"
-                            x-text="project.outcomeLabel"
-                        ></p>
+                        <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-[#0A0A0A] transition hover:text-[#525252]">
+                            Explore case
+                            <x-icons.chevron-right class="h-4 w-4" />
+                        </a>
                     </div>
 
+                    <div class="mt-4 flex items-center gap-3 text-sm font-medium text-[#0A0A0A]">
+                        <span class="font-heading text-4xl font-semibold tracking-tight text-[#0A0A0A]" x-text="project.outcome"></span>
+                        <span class="text-[#525252]">impact delivered</span>
+                    </div>
                 </div>
 
             </article>

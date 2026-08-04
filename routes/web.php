@@ -12,6 +12,7 @@ use App\Http\Controllers\EmailListController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\SitemapController;
+use App\Http\Controllers\ContactUsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PagesController::class, 'home'])->name('home');
@@ -30,6 +31,7 @@ Route::get('/featured-publications', [PagesController::class, 'featuredPost'])->
 Route::get('/case-studies', [PagesController::class, 'caseStudy'])->name('case-studies');
 Route::get('/faq-and-pricing', [PagesController::class, 'faqAndPricing'])->name('faq-and-pricing');
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
+Route::post('/contact', [ContactUsController::class, 'store'])->name('contact-us.store');
 
 
 // end new pages

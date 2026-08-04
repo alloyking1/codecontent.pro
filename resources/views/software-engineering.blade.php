@@ -65,20 +65,16 @@
 >
     <div class="">
         <div class="">
+            
             <x-custom.portfolio-card
-            step="1"
-            title="Discovery & Technical Scope">
-            We start with a technical alignment call or audit of your current stack, codebase, or content strategy. We define your exact deliverables, timeline, and success metrics.
-        </x-custom.portfolio-card>
-        </div>
-    </div>
-    <div class="">
-        <div class="">
-            <x-custom.portfolio-card
-            step="1"
-            title="Discovery & Technical Scope">
-            We start with a technical alignment call or audit of your current stack, codebase, or content strategy. We define your exact deliverables, timeline, and success metrics.
-        </x-custom.portfolio-card>
+            :works="[
+                [
+                    'title' => 'Pimlytics',
+                    'description' => 'A web application for learning and training data professionals through tutorials and downloadable resources',
+                    'img' => asset('primlytics_1.png'),
+                ],
+            ]"
+        />
         </div>
     </div>
 </x-custom.service-portfolio>
@@ -90,29 +86,6 @@
     yellowDotText="THE PROCESS"
     description="We let production code, deployed AI architectures, and measurable technical outcomes speak for us."
 >
-{{-- <div class="flex gap-2">
-    <div class="">
-        <div class="p-12 w-[70%] rounded-full text-5xl flex justify-center border border-[#E5E5E5]">
-            1
-        </div>
-        <div>
-            <p class="text-sm font-thin text-[#0A0A0A]">
-                sdfsdf sdkjfsldfk ksdlfks dkjsdl skdf skd
-            </p>
-        </div>
-    </div>
-    <div class="">
-        <div class="p-12 w-[70%] rounded-full text-5xl flex justify-center border border-[#E5E5E5]">
-            2
-        </div>
-        <div>
-            <p class="text-sm font-thin text-[#0A0A0A]">
-                sdfsdf sdkjfsldfk ksdlfks dkjsdl skdf skd
-            </p>
-        </div>
-    </div>
-    
-</div> --}}
 </x-custom.service-delivery-workflow>
 
 
